@@ -277,6 +277,49 @@ export const cardRouter = createTRPCRouter({
         createdBy: userId,
       });
 
+      const existingCard = await cardRepo.getByPublicId(
+        ctx.db,
+        input.cardPublicId,
+      );
+
+      if (!existingCard) {
+        throw new TRPCError({
+          message: `Card with public ID ${input.cardPublicId} not found`,
+          code: "NOT_FOUND",
+        });
+      }
+      // const list = await listRepo.getWorkspaceAndListIdByListPublicId(
+      //   ctx.db,
+      //   cardActRepo.fromListId ?? cardActRepo.toListId,
+      // );
+
+      // Fire webhooks (non-blocking)
+      sendWebhooksForWorkspace(
+        ctx.db,
+        card.workspaceId,
+        createCardWebhookPayload(
+          "card.updated",
+          {
+            id: String(card.id),
+            publicId: input.cardPublicId,
+            title: existingCard.title,
+            description: input.comment ?? "",
+            dueDate: existingCard.dueDate ?? undefined,
+            listId: String(existingCard.listId ?? ""),
+          },
+          {
+            boardId: "",
+            boardName: "",
+            listName: "",
+            user: ctx.user
+              ? { id: userId, name: ctx.user.name }
+              : undefined,
+          },
+        ),
+      ).catch((error) => {
+        console.error("Webhook delivery failed:", error);
+      });
+
       sendMentionEmails({
         db: ctx.db,
         cardPublicId: input.cardPublicId,
@@ -367,6 +410,37 @@ export const cardRouter = createTRPCRouter({
         createdBy: userId,
       });
 
+      // const list = await listRepo.getWorkspaceAndListIdByListPublicId(
+      //   ctx.db,
+      //   cardActRepo.fromListId ?? cardActRepo.toListId,
+      // );
+      //
+      // // Fire webhooks (non-blocking)
+      // sendWebhooksForWorkspace(
+      //   ctx.db,
+      //   input.workspaceId,
+      //   createCardWebhookPayload(
+      //     "card.updated",
+      //     {
+      //       id: String(card.id),
+      //       title: input.title,
+      //       description: input.comment,
+      //       dueDate: input.dueDate ?? null,
+      //       listId: String(card.listId),
+      //     },
+      //     {
+      //       boardId: list.boardPublicId,
+      //       boardName: list.boardName,
+      //       listName: list.name,
+      //       user: ctx.user
+      //         ? { id: userId, name: ctx.user.name }
+      //         : undefined,
+      //     },
+      //   ),
+      // ).catch((error) => {
+      //   console.error("Webhook delivery failed:", error);
+      // });
+
       sendMentionEmails({
         db: ctx.db,
         cardPublicId: input.cardPublicId,
@@ -455,6 +529,38 @@ export const cardRouter = createTRPCRouter({
       });
 
       return { publicId: input.commentPublicId };
+      // const list = await listRepo.getWorkspaceAndListIdByListPublicId(
+      //   ctx.db,
+      //   input.listPublicId,
+      // );
+      //
+      // // Fire webhooks (non-blocking)
+      // sendWebhooksForWorkspace(
+      //   ctx.db,
+      //   list.workspaceId,
+      //   createCardWebhookPayload(
+      //     "card.updated",
+      //     {
+      //       id: String(card.id),
+      //       title: input.title,
+      //       description: "Comment deleted",
+      //       dueDate: input.dueDate ?? null,
+      //       listId: String(card.listId),
+      //     },
+      //     {
+      //       boardId: list.boardPublicId,
+      //       boardName: list.boardName,
+      //       listName: list.name,
+      //       user: ctx.user
+      //         ? { id: userId, name: ctx.user.name }
+      //         : undefined,
+      //     },
+      //   ),
+      // ).catch((error) => {
+      //   console.error("Webhook delivery failed:", error);
+      // });
+      //
+      // return deletedComment;
     }),
   addOrRemoveLabel: protectedProcedure
     .meta({
@@ -1070,6 +1176,12 @@ export const cardRouter = createTRPCRouter({
           to: input.listPublicId!,
         };
       }
+
+      // if (newListId && existingCard.listId !== newListId) {
+      //   webhookChanges.listId = { from: existingCard.listId, to: newListId };
+      //   // FIX: card moved -> https://github.com/kanbn/kan/issues/457
+      //   ctx.listName = card.listName
+      // }
 
       // Fire webhooks (non-blocking)
       sendWebhooksForWorkspace(
