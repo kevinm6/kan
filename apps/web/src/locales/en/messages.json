@@ -59,7 +59,7 @@
       ],
       [
         "src/views/card/index.tsx",
-        317
+        321
       ]
     ],
     "translation": "{0} | {1}"
@@ -391,11 +391,11 @@
     "origin": [
       [
         "src/views/card/index.tsx",
-        468
+        476
       ],
       [
         "src/views/public/board/CardModal.tsx",
-        205
+        209
       ]
     ],
     "translation": "Activity"
@@ -467,7 +467,7 @@
     "origin": [
       [
         "src/views/card/components/Dropdown.tsx",
-        96
+        123
       ]
     ],
     "translation": "Add checklist"
@@ -737,7 +737,7 @@
     "origin": [
       [
         "src/views/members/components/InviteMemberForm.tsx",
-        322
+        320
       ]
     ],
     "translation": "Adding a new member will cost an additional {price} ({billingType}) per seat."
@@ -1309,7 +1309,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        296
+        298
       ]
     ],
     "translation": "Back"
@@ -1489,7 +1489,7 @@
       ],
       [
         "src/views/card/index.tsx",
-        317
+        321
       ],
       [
         "src/views/public/board/index.tsx",
@@ -2193,7 +2193,7 @@
     "origin": [
       [
         "src/views/card/index.tsx",
-        317
+        321
       ]
     ],
     "translation": "Card"
@@ -2206,9 +2206,25 @@
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
         67
+      ],
+      [
+        "src/views/card/components/Dropdown.tsx",
+        46
       ]
     ],
     "translation": "Card duplicated"
+  },
+  "9trBXW": {
+    "message": "Card duplicated successfully.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/card/components/Dropdown.tsx",
+        48
+      ]
+    ],
+    "translation": "Card duplicated successfully."
   },
   "fEY2vP": {
     "message": "Card not found",
@@ -2217,11 +2233,11 @@
     "origin": [
       [
         "src/views/card/index.tsx",
-        376
+        384
       ],
       [
         "src/views/card/index.tsx",
-        413
+        421
       ]
     ],
     "translation": "Card not found"
@@ -2249,7 +2265,7 @@
       ],
       [
         "src/views/card/components/Dropdown.tsx",
-        47
+        74
       ],
       [
         "src/views/public/board/CardModal.tsx",
@@ -2405,7 +2421,7 @@
     "origin": [
       [
         "src/views/members/components/InviteMemberForm.tsx",
-        358
+        355
       ],
       [
         "src/views/settings/BillingSettings.tsx",
@@ -2497,7 +2513,7 @@
       ],
       [
         "src/views/card/index.tsx",
-        367
+        375
       ],
       [
         "src/views/members/components/EditMemberPermissionsModal.tsx",
@@ -2845,7 +2861,7 @@
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        313
+        315
       ]
     ],
     "translation": "Continue"
@@ -2921,7 +2937,7 @@
     "origin": [
       [
         "src/views/card/components/Dropdown.tsx",
-        80
+        107
       ]
     ],
     "translation": "Copy card link"
@@ -2981,7 +2997,7 @@
     "origin": [
       [
         "src/views/card/components/Dropdown.tsx",
-        87
+        114
       ]
     ],
     "translation": "Copy ticket ID"
@@ -3077,7 +3093,7 @@
     "origin": [
       [
         "src/views/members/components/InviteMemberForm.tsx",
-        346
+        343
       ]
     ],
     "translation": "Create invite link"
@@ -3205,7 +3221,7 @@
       ],
       [
         "src/components/WorkspaceMenu.tsx",
-        160
+        171
       ]
     ],
     "translation": "Create workspace"
@@ -3378,7 +3394,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        239
+        241
       ]
     ],
     "translation": "Custom usernames require upgrading to a Pro plan"
@@ -3438,7 +3454,7 @@
     "origin": [
       [
         "src/views/members/components/InviteMemberForm.tsx",
-        345
+        342
       ]
     ],
     "translation": "Deactivate invite link"
@@ -3558,7 +3574,7 @@
       ],
       [
         "src/views/card/components/Dropdown.tsx",
-        107
+        152
       ]
     ],
     "translation": "Delete card"
@@ -4023,6 +4039,10 @@
       [
         "src/views/board/components/CardContextMenu.tsx",
         68
+      ],
+      [
+        "src/views/card/components/Dropdown.tsx",
+        130
       ]
     ],
     "translation": "Duplicate card"
@@ -4242,7 +4262,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        179
+        181
       ]
     ],
     "translation": "Engineering"
@@ -5055,7 +5075,7 @@
     "origin": [
       [
         "src/views/members/components/InviteMemberForm.tsx",
-        328
+        326
       ],
       [
         "src/views/members/index.tsx",
@@ -5595,7 +5615,7 @@
     "origin": [
       [
         "src/views/card/components/Dropdown.tsx",
-        64
+        91
       ]
     ],
     "translation": "ID copied"
@@ -5931,7 +5951,7 @@
       ],
       [
         "src/views/members/components/InviteMemberForm.tsx",
-        366
+        363
       ]
     ],
     "translation": "Invite member"
@@ -5943,7 +5963,7 @@
     "origin": [
       [
         "src/views/members/components/InviteMemberForm.tsx",
-        331
+        329
       ]
     ],
     "translation": "Inviting members requires a Team or Pro plan. You'll be redirected to upgrade your workspace."
@@ -6277,7 +6297,7 @@
       ],
       [
         "src/views/card/components/Dropdown.tsx",
-        45
+        72
       ],
       [
         "src/views/public/board/CardModal.tsx",
@@ -6501,7 +6521,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        179
+        181
       ]
     ],
     "translation": "Marketing"
@@ -7268,7 +7288,7 @@
     "origin": [
       [
         "src/components/WorkspaceMenu.tsx",
-        34
+        37
       ]
     ],
     "translation": "Open command menu"
@@ -7924,11 +7944,11 @@
       ],
       [
         "src/views/card/index.tsx",
-        232
+        236
       ],
       [
         "src/views/card/index.tsx",
-        245
+        249
       ],
       [
         "src/views/members/components/DeleteMemberConfirmation.tsx",
@@ -7956,11 +7976,11 @@
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        119
+        121
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        168
+        170
       ],
       [
         "src/views/settings/components/Avatar.tsx",
@@ -8036,11 +8056,15 @@
       ],
       [
         "src/views/card/components/Dropdown.tsx",
-        54
+        55
       ],
       [
         "src/views/card/components/Dropdown.tsx",
-        73
+        81
+      ],
+      [
+        "src/views/card/components/Dropdown.tsx",
+        100
       ],
       [
         "src/views/public/board/CardModal.tsx",
@@ -8172,7 +8196,7 @@
     "origin": [
       [
         "src/views/members/components/InviteMemberForm.tsx",
-        306
+        305
       ],
       [
         "src/views/members/index.tsx",
@@ -8603,7 +8627,7 @@
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        179
+        181
       ]
     ],
     "translation": "Roadmap"
@@ -8767,7 +8791,7 @@
     "origin": [
       [
         "src/views/members/components/InviteMemberForm.tsx",
-        309
+        308
       ],
       [
         "src/views/members/index.tsx",
@@ -9023,7 +9047,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        197
+        199
       ]
     ],
     "translation": "Set up your workspace"
@@ -9203,7 +9227,7 @@
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        384
+        386
       ]
     ],
     "translation": "Sign out"
@@ -9575,7 +9599,7 @@
     "origin": [
       [
         "src/views/members/components/InviteMemberForm.tsx",
-        306
+        305
       ],
       [
         "src/views/members/components/InviteMemberForm.tsx",
@@ -10043,7 +10067,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        83
+        84
       ]
     ],
     "translation": "This URL has already been taken"
@@ -10055,7 +10079,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        85
+        86
       ]
     ],
     "translation": "This URL is reserved"
@@ -10151,7 +10175,7 @@
     "origin": [
       [
         "src/views/card/components/Dropdown.tsx",
-        66
+        93
       ]
     ],
     "translation": "Ticket ID copied to clipboard"
@@ -10327,7 +10351,7 @@
     "origin": [
       [
         "src/views/card/index.tsx",
-        244
+        248
       ]
     ],
     "translation": "Unable to add label"
@@ -10351,7 +10375,7 @@
     "origin": [
       [
         "src/views/card/components/Dropdown.tsx",
-        71
+        98
       ]
     ],
     "translation": "Unable to copy ID"
@@ -10367,7 +10391,7 @@
       ],
       [
         "src/views/card/components/Dropdown.tsx",
-        52
+        79
       ],
       [
         "src/views/public/board/CardModal.tsx",
@@ -10455,7 +10479,7 @@
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        118
+        120
       ]
     ],
     "translation": "Unable to create workspace"
@@ -10540,6 +10564,10 @@
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
         75
+      ],
+      [
+        "src/views/card/components/Dropdown.tsx",
+        53
       ]
     ],
     "translation": "Unable to duplicate card"
@@ -10611,7 +10639,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        167
+        169
       ]
     ],
     "translation": "Unable to start checkout"
@@ -10679,7 +10707,7 @@
       ],
       [
         "src/views/card/index.tsx",
-        231
+        235
       ]
     ],
     "translation": "Unable to update card"
@@ -11211,7 +11239,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        263
+        265
       ]
     ],
     "translation": "Upgrade to Pro ($29/month)"
@@ -11792,7 +11820,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        273
+        275
       ],
       [
         "src/views/settings/WorkspaceSettings.tsx",
@@ -11868,7 +11896,7 @@
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        206
+        208
       ],
       [
         "src/views/settings/WorkspaceSettings.tsx",
@@ -12048,7 +12076,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        200
+        202
       ]
     ],
     "translation": "You can always change these later in settings."
@@ -12175,7 +12203,8 @@
         321
       ]
     ],
-    "translation": "You have unlimited seats with your Pro Plan. There is no additional charge for new members!"
+    "translation": "You have unlimited seats with your Pro Plan. There is no additional charge for new members!",
+    "obsolete": true
   },
   "MdN5zD": {
     "message": "You need to be an admin to manage workspace permissions.",
@@ -12464,7 +12493,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        344
+        346
       ]
     ],
     "translation": "Your workspace"
@@ -12476,7 +12505,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        347
+        349
       ]
     ],
     "translation": "Your workspace description"
@@ -12536,11 +12565,11 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        216
+        218
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        217
+        219
       ]
     ],
     "translation": "your-workspace"

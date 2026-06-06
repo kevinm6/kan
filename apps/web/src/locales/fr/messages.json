@@ -34,7 +34,7 @@
     "comments": [],
     "origin": [
       ["src/views/boards/index.tsx", 48],
-      ["src/views/card/index.tsx", 317]
+      ["src/views/card/index.tsx", 321]
     ],
     "translation": "{0} | {1}"
   },
@@ -231,8 +231,8 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/card/index.tsx", 468],
-      ["src/views/public/board/CardModal.tsx", 205]
+      ["src/views/card/index.tsx", 476],
+      ["src/views/public/board/CardModal.tsx", 209]
     ],
     "translation": "Activité"
   },
@@ -277,7 +277,7 @@
     "message": "Add checklist",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/card/components/Dropdown.tsx", 96]],
+    "origin": [["src/views/card/components/Dropdown.tsx", 123]],
     "translation": "Ajouter une checklist"
   },
   "ngBZOd": {
@@ -433,7 +433,7 @@
       "billingType": ["billingType"]
     },
     "comments": [],
-    "origin": [["src/views/members/components/InviteMemberForm.tsx", 322]],
+    "origin": [["src/views/members/components/InviteMemberForm.tsx", 320]],
     "translation": "L'ajout d'un nouveau membre coûtera {price} supplémentaires ({billingType}) par siège."
   },
   "D7/JvJ": {
@@ -784,7 +784,7 @@
     "message": "Back",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/onboarding/workspace-details/index.tsx", 296]],
+    "origin": [["src/views/onboarding/workspace-details/index.tsx", 298]],
     "translation": "Retour"
   },
   "KNKCTb": {
@@ -888,7 +888,7 @@
     "comments": [],
     "origin": [
       ["src/views/board/index.tsx", 530],
-      ["src/views/card/index.tsx", 317],
+      ["src/views/card/index.tsx", 321],
       ["src/views/public/board/index.tsx", 125]
     ],
     "translation": "Tableau"
@@ -1304,7 +1304,7 @@
     "message": "Card",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/card/index.tsx", 317]],
+    "origin": [["src/views/card/index.tsx", 321]],
     "translation": "Carte"
   },
   "sU2uWc": {
@@ -1312,17 +1312,25 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/board/components/CardContextDuplicateModal.tsx", 67]
+      ["src/views/board/components/CardContextDuplicateModal.tsx", 67],
+      ["src/views/card/components/Dropdown.tsx", 46]
     ],
     "translation": "Carte dupliquée"
+  },
+  "9trBXW": {
+    "message": "Card duplicated successfully.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [["src/views/card/components/Dropdown.tsx", 48]],
+    "translation": "Carte dupliquée avec succès."
   },
   "fEY2vP": {
     "message": "Card not found",
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/card/index.tsx", 376],
-      ["src/views/card/index.tsx", 413]
+      ["src/views/card/index.tsx", 384],
+      ["src/views/card/index.tsx", 421]
     ],
     "translation": "Carte introuvable"
   },
@@ -1339,7 +1347,7 @@
     "comments": [],
     "origin": [
       ["src/views/board/index.tsx", 308],
-      ["src/views/card/components/Dropdown.tsx", 47],
+      ["src/views/card/components/Dropdown.tsx", 74],
       ["src/views/public/board/CardModal.tsx", 38]
     ],
     "translation": "URL de la carte copiée dans le presse-papiers"
@@ -1429,7 +1437,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/members/components/InviteMemberForm.tsx", 358],
+      ["src/views/members/components/InviteMemberForm.tsx", 355],
       ["src/views/settings/BillingSettings.tsx", 80]
     ],
     "translation": "Choisir un forfait"
@@ -1491,7 +1499,7 @@
     "comments": [],
     "origin": [
       ["src/components/Dashboard.tsx", 281],
-      ["src/views/card/index.tsx", 367],
+      ["src/views/card/index.tsx", 375],
       ["src/views/members/components/EditMemberPermissionsModal.tsx", 172],
       ["src/views/settings/components/NewApiKeyModal.tsx", 136]
     ],
@@ -1697,7 +1705,7 @@
     "comments": [],
     "origin": [
       ["src/views/onboarding/select-plan/index.tsx", 242],
-      ["src/views/onboarding/workspace-details/index.tsx", 313]
+      ["src/views/onboarding/workspace-details/index.tsx", 315]
     ],
     "translation": "Continuer"
   },
@@ -1742,7 +1750,7 @@
     "message": "Copy card link",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/card/components/Dropdown.tsx", 80]],
+    "origin": [["src/views/card/components/Dropdown.tsx", 107]],
     "translation": "Copier le lien de la carte"
   },
   "0utuU6": {
@@ -1783,7 +1791,7 @@
     "message": "Copy ticket ID",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/card/components/Dropdown.tsx", 87]],
+    "origin": [["src/views/card/components/Dropdown.tsx", 114]],
     "translation": "Copier l'ID du ticket"
   },
   "9PaIxv": {
@@ -1840,7 +1848,7 @@
     "message": "Create invite link",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/members/components/InviteMemberForm.tsx", 346]],
+    "origin": [["src/views/members/components/InviteMemberForm.tsx", 343]],
     "translation": "Créer un lien d'invitation"
   },
   "QtACvI": {
@@ -1916,7 +1924,7 @@
     "comments": [],
     "origin": [
       ["src/components/NewWorkspaceForm.tsx", 227],
-      ["src/components/WorkspaceMenu.tsx", 160]
+      ["src/components/WorkspaceMenu.tsx", 171]
     ],
     "translation": "Créer un espace de travail"
   },
@@ -2021,7 +2029,7 @@
     "message": "Custom usernames require upgrading to a Pro plan",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/onboarding/workspace-details/index.tsx", 239]],
+    "origin": [["src/views/onboarding/workspace-details/index.tsx", 241]],
     "translation": "Les noms d'utilisateur personnalisés nécessitent une mise à niveau vers un forfait Pro"
   },
   "j9IZZ0": {
@@ -2058,7 +2066,7 @@
     "message": "Deactivate invite link",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/members/components/InviteMemberForm.tsx", 345]],
+    "origin": [["src/views/members/components/InviteMemberForm.tsx", 342]],
     "translation": "Désactiver le lien d'invitation"
   },
   "bKzM8L": {
@@ -2119,7 +2127,7 @@
     "comments": [],
     "origin": [
       ["src/views/board/components/CardContextMenu.tsx", 74],
-      ["src/views/card/components/Dropdown.tsx", 107]
+      ["src/views/card/components/Dropdown.tsx", 152]
     ],
     "translation": "Supprimer la carte"
   },
@@ -2379,7 +2387,8 @@
     "comments": [],
     "origin": [
       ["src/views/board/components/CardContextDuplicateModal.tsx", 111],
-      ["src/views/board/components/CardContextMenu.tsx", 68]
+      ["src/views/board/components/CardContextMenu.tsx", 68],
+      ["src/views/card/components/Dropdown.tsx", 130]
     ],
     "translation": "Dupliquer la carte"
   },
@@ -2517,7 +2526,7 @@
     "message": "Engineering",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/onboarding/workspace-details/index.tsx", 179]],
+    "origin": [["src/views/onboarding/workspace-details/index.tsx", 181]],
     "translation": "Ingénierie"
   },
   "0+ewPp": {
@@ -3013,7 +3022,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/members/components/InviteMemberForm.tsx", 328],
+      ["src/views/members/components/InviteMemberForm.tsx", 326],
       ["src/views/members/index.tsx", 311]
     ],
     "translation": "Forfait gratuit"
@@ -3330,7 +3339,7 @@
     "message": "ID copied",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/card/components/Dropdown.tsx", 64]],
+    "origin": [["src/views/card/components/Dropdown.tsx", 91]],
     "translation": "ID copié"
   },
   "iwr7AP": {
@@ -3529,7 +3538,7 @@
     "comments": [],
     "origin": [
       ["src/views/card/components/MemberSelector.tsx", 115],
-      ["src/views/members/components/InviteMemberForm.tsx", 366]
+      ["src/views/members/components/InviteMemberForm.tsx", 363]
     ],
     "translation": "Inviter un membre"
   },
@@ -3537,7 +3546,7 @@
     "message": "Inviting members requires a Team or Pro plan. You'll be redirected to upgrade your workspace.",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/members/components/InviteMemberForm.tsx", 331]],
+    "origin": [["src/views/members/components/InviteMemberForm.tsx", 329]],
     "translation": "L'invitation de membres nécessite un forfait Team ou Pro. Vous serez redirigé pour mettre à niveau votre espace de travail."
   },
   "qPP4lD": {
@@ -3735,7 +3744,7 @@
     "origin": [
       ["src/views/board/components/UpdateBoardSlugButton.tsx", 80],
       ["src/views/board/index.tsx", 306],
-      ["src/views/card/components/Dropdown.tsx", 45],
+      ["src/views/card/components/Dropdown.tsx", 72],
       ["src/views/public/board/CardModal.tsx", 36],
       ["src/views/public/board/index.tsx", 77]
     ],
@@ -3867,7 +3876,7 @@
     "message": "Marketing",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/onboarding/workspace-details/index.tsx", 179]],
+    "origin": [["src/views/onboarding/workspace-details/index.tsx", 181]],
     "translation": "Marketing"
   },
   "agPptk": {
@@ -4314,7 +4323,7 @@
     "message": "Open command menu",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/WorkspaceMenu.tsx", 34]],
+    "origin": [["src/components/WorkspaceMenu.tsx", 37]],
     "translation": "Ouvrir le menu de commandes"
   },
   "cFQEU/": {
@@ -4675,16 +4684,16 @@
       ["src/views/card/components/NewChecklistForm.tsx", 71],
       ["src/views/card/components/NewChecklistItemForm.tsx", 90],
       ["src/views/card/components/NewCommentForm.tsx", 37],
-      ["src/views/card/index.tsx", 232],
-      ["src/views/card/index.tsx", 245],
+      ["src/views/card/index.tsx", 236],
+      ["src/views/card/index.tsx", 249],
       ["src/views/members/components/DeleteMemberConfirmation.tsx", 28],
       ["src/views/members/components/EditMemberPermissionsModal.tsx", 42],
       ["src/views/members/components/EditMemberPermissionsModal.tsx", 65],
       ["src/views/members/components/EditMemberPermissionsModal.tsx", 93],
       ["src/views/members/components/InviteMemberForm.tsx", 112],
       ["src/views/members/index.tsx", 70],
-      ["src/views/onboarding/workspace-details/index.tsx", 119],
-      ["src/views/onboarding/workspace-details/index.tsx", 168],
+      ["src/views/onboarding/workspace-details/index.tsx", 121],
+      ["src/views/onboarding/workspace-details/index.tsx", 170],
       ["src/views/settings/components/Avatar.tsx", 200],
       ["src/views/settings/components/DeleteAccountConfirmation.tsx", 40],
       ["src/views/settings/components/DeleteWorkspaceConfirmation.tsx", 46],
@@ -4715,8 +4724,9 @@
       ["src/views/board/components/CardContextDuplicateModal.tsx", 76],
       ["src/views/board/components/CardContextMoveListModal.tsx", 42],
       ["src/views/board/index.tsx", 315],
-      ["src/views/card/components/Dropdown.tsx", 54],
-      ["src/views/card/components/Dropdown.tsx", 73],
+      ["src/views/card/components/Dropdown.tsx", 55],
+      ["src/views/card/components/Dropdown.tsx", 81],
+      ["src/views/card/components/Dropdown.tsx", 100],
       ["src/views/public/board/CardModal.tsx", 45],
       ["src/views/public/board/index.tsx", 86]
     ],
@@ -4787,7 +4797,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/members/components/InviteMemberForm.tsx", 306],
+      ["src/views/members/components/InviteMemberForm.tsx", 305],
       ["src/views/members/index.tsx", 308]
     ],
     "translation": "Forfait Pro"
@@ -5038,7 +5048,7 @@
       ["src/views/home/components/Footer.tsx", 36],
       ["src/views/home/components/Header.tsx", 13],
       ["src/views/home/components/Header.tsx", 28],
-      ["src/views/onboarding/workspace-details/index.tsx", 179]
+      ["src/views/onboarding/workspace-details/index.tsx", 181]
     ],
     "translation": "Roadmap"
   },
@@ -5139,7 +5149,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/members/components/InviteMemberForm.tsx", 309],
+      ["src/views/members/components/InviteMemberForm.tsx", 308],
       ["src/views/members/index.tsx", 319]
     ],
     "translation": "places"
@@ -5290,7 +5300,7 @@
     "message": "Set up your workspace",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/onboarding/workspace-details/index.tsx", 197]],
+    "origin": [["src/views/onboarding/workspace-details/index.tsx", 199]],
     "translation": "Configurer votre espace de travail"
   },
   "Tz0i8g": {
@@ -5395,7 +5405,7 @@
     "comments": [],
     "origin": [
       ["src/views/onboarding/select-plan/index.tsx", 315],
-      ["src/views/onboarding/workspace-details/index.tsx", 384]
+      ["src/views/onboarding/workspace-details/index.tsx", 386]
     ],
     "translation": "Se déconnecter"
   },
@@ -5626,7 +5636,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/members/components/InviteMemberForm.tsx", 306],
+      ["src/views/members/components/InviteMemberForm.tsx", 305],
       ["src/views/members/components/InviteMemberForm.tsx", 317],
       ["src/views/members/index.tsx", 310]
     ],
@@ -5905,14 +5915,14 @@
     "message": "This URL has already been taken",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/onboarding/workspace-details/index.tsx", 83]],
+    "origin": [["src/views/onboarding/workspace-details/index.tsx", 84]],
     "translation": "Cette URL est déjà prise"
   },
   "gKmoow": {
     "message": "This URL is reserved",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/onboarding/workspace-details/index.tsx", 85]],
+    "origin": [["src/views/onboarding/workspace-details/index.tsx", 86]],
     "translation": "Cette URL est réservée"
   },
   "OAYToL": {
@@ -5979,7 +5989,7 @@
     "message": "Ticket ID copied to clipboard",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/card/components/Dropdown.tsx", 66]],
+    "origin": [["src/views/card/components/Dropdown.tsx", 93]],
     "translation": "ID du ticket copié dans le presse-papiers"
   },
   "MHrjPM": {
@@ -6085,7 +6095,7 @@
     "message": "Unable to add label",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/card/index.tsx", 244]],
+    "origin": [["src/views/card/index.tsx", 248]],
     "translation": "Impossible d'ajouter l'étiquette"
   },
   "LeM5RY": {
@@ -6099,7 +6109,7 @@
     "message": "Unable to copy ID",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/card/components/Dropdown.tsx", 71]],
+    "origin": [["src/views/card/components/Dropdown.tsx", 98]],
     "translation": "Impossible de copier l'ID"
   },
   "W1ewR0": {
@@ -6108,7 +6118,7 @@
     "comments": [],
     "origin": [
       ["src/views/board/index.tsx", 313],
-      ["src/views/card/components/Dropdown.tsx", 52],
+      ["src/views/card/components/Dropdown.tsx", 79],
       ["src/views/public/board/CardModal.tsx", 43],
       ["src/views/public/board/index.tsx", 84]
     ],
@@ -6158,7 +6168,7 @@
     "comments": [],
     "origin": [
       ["src/components/NewWorkspaceForm.tsx", 109],
-      ["src/views/onboarding/workspace-details/index.tsx", 118]
+      ["src/views/onboarding/workspace-details/index.tsx", 120]
     ],
     "translation": "Impossible de créer l'espace de travail"
   },
@@ -6213,7 +6223,8 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/board/components/CardContextDuplicateModal.tsx", 75]
+      ["src/views/board/components/CardContextDuplicateModal.tsx", 75],
+      ["src/views/card/components/Dropdown.tsx", 53]
     ],
     "translation": "Impossible de dupliquer la carte"
   },
@@ -6260,7 +6271,7 @@
     "message": "Unable to start checkout",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/onboarding/workspace-details/index.tsx", 167]],
+    "origin": [["src/views/onboarding/workspace-details/index.tsx", 169]],
     "translation": "Impossible de démarrer le paiement"
   },
   "KNK33q": {
@@ -6300,7 +6311,7 @@
     "comments": [],
     "origin": [
       ["src/views/board/index.tsx", 273],
-      ["src/views/card/index.tsx", 231]
+      ["src/views/card/index.tsx", 235]
     ],
     "translation": "Impossible de mettre à jour la carte"
   },
@@ -6604,7 +6615,7 @@
     "message": "Upgrade to Pro ($29/month)",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/onboarding/workspace-details/index.tsx", 263]],
+    "origin": [["src/views/onboarding/workspace-details/index.tsx", 265]],
     "translation": "Passer à Pro (29 $/mois)"
   },
   "b3Thhd": {
@@ -6950,7 +6961,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/onboarding/workspace-details/index.tsx", 273],
+      ["src/views/onboarding/workspace-details/index.tsx", 275],
       ["src/views/settings/WorkspaceSettings.tsx", 55]
     ],
     "translation": "Description de l'espace de travail"
@@ -6999,7 +7010,7 @@
     "comments": [],
     "origin": [
       ["src/components/NewWorkspaceForm.tsx", 165],
-      ["src/views/onboarding/workspace-details/index.tsx", 206],
+      ["src/views/onboarding/workspace-details/index.tsx", 208],
       ["src/views/settings/WorkspaceSettings.tsx", 36]
     ],
     "translation": "Nom de l'espace de travail"
@@ -7111,7 +7122,7 @@
     "message": "You can always change these later in settings.",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/onboarding/workspace-details/index.tsx", 200]],
+    "origin": [["src/views/onboarding/workspace-details/index.tsx", 202]],
     "translation": "Vous pourrez toujours modifier ces paramètres plus tard dans les réglages."
   },
   "aelko+": {
@@ -7177,7 +7188,8 @@
     "placeholders": {},
     "comments": [],
     "origin": [["src/views/members/components/InviteMemberForm.tsx", 321]],
-    "translation": "Vous disposez de places illimitées avec votre forfait pro. Il n'y a aucun frais supplémentaire pour les nouveaux membres !"
+    "translation": "Vous disposez de places illimitées avec votre forfait pro. Il n'y a aucun frais supplémentaire pour les nouveaux membres !",
+    "obsolete": true
   },
   "MdN5zD": {
     "message": "You need to be an admin to manage workspace permissions.",
@@ -7354,14 +7366,14 @@
     "message": "Your workspace",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/onboarding/workspace-details/index.tsx", 344]],
+    "origin": [["src/views/onboarding/workspace-details/index.tsx", 346]],
     "translation": "Votre espace de travail"
   },
   "j0o6ml": {
     "message": "Your workspace description",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/onboarding/workspace-details/index.tsx", 347]],
+    "origin": [["src/views/onboarding/workspace-details/index.tsx", 349]],
     "translation": "La description de votre espace de travail"
   },
   "GnSSGm": {
@@ -7405,8 +7417,8 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/onboarding/workspace-details/index.tsx", 216],
-      ["src/views/onboarding/workspace-details/index.tsx", 217]
+      ["src/views/onboarding/workspace-details/index.tsx", 218],
+      ["src/views/onboarding/workspace-details/index.tsx", 219]
     ],
     "translation": "votre-espace-de-travail"
   },
