@@ -51,7 +51,9 @@ const config = {
         { protocol: "https", hostname: "**" },
         {
           protocol: "http",
-          hostname: "localhost",
+          hostname: "192.168.1.121",
+          port: "5000",
+          pathname: "/**",
         },
       ];
 
