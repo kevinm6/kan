@@ -286,7 +286,7 @@
     "comments": [],
     "origin": [
       ["src/views/card/components/Comment.tsx", 185],
-      ["src/views/card/components/NewCommentForm.tsx", 68]
+      ["src/views/card/components/NewCommentForm.tsx", 85]
     ],
     "translation": "Añadir comentario... (escribe '/' para abrir comandos o '@' para mencionar)"
   },
@@ -294,7 +294,7 @@
     "message": "Add description... (type '/' to open commands or '@' to mention)",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/Editor.tsx", 493]],
+    "origin": [["src/components/Editor.tsx", 499]],
     "translation": "Añadir descripción... (escribe '/' para abrir comandos o '@' para mencionar)"
   },
   "abUZlY": {
@@ -4683,7 +4683,7 @@
       ["src/views/card/components/MemberSelector.tsx", 82],
       ["src/views/card/components/NewChecklistForm.tsx", 71],
       ["src/views/card/components/NewChecklistItemForm.tsx", 90],
-      ["src/views/card/components/NewCommentForm.tsx", 37],
+      ["src/views/card/components/NewCommentForm.tsx", 38],
       ["src/views/card/index.tsx", 236],
       ["src/views/card/index.tsx", 249],
       ["src/views/members/components/DeleteMemberConfirmation.tsx", 28],
@@ -5565,6 +5565,13 @@
     "origin": [["src/views/settings/components/WebhookList.tsx", 232]],
     "translation": "Estado"
   },
+  "hQRttt": {
+    "translation": "Enviar",
+    "message": "Submit",
+    "placeholders": {},
+    "comments": [],
+    "origin": [["src/views/card/components/NewCommentForm.tsx", 60]]
+  },
   "WYDptz": {
     "message": "Subscription Required",
     "placeholders": {},
@@ -6088,7 +6095,7 @@
     "message": "Unable to add comment",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/card/components/NewCommentForm.tsx", 36]],
+    "origin": [["src/views/card/components/NewCommentForm.tsx", 37]],
     "translation": "No se pudo agregar el comentario"
   },
   "2Q871c": {
