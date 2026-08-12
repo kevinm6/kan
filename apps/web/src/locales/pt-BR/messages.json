@@ -19,7 +19,7 @@
       "0": ["isTemplate ? \"Templates\" : \"Boards\""]
     },
     "comments": [],
-    "origin": [["src/views/boards/index.tsx", 53]],
+    "origin": [["src/views/boards/index.tsx", 62]],
     "translation": "{0}"
   },
   "JArWcF": {
@@ -33,7 +33,7 @@
     },
     "comments": [],
     "origin": [
-      ["src/views/boards/index.tsx", 48],
+      ["src/views/boards/index.tsx", 57],
       ["src/views/card/index.tsx", 321]
     ],
     "translation": "{0} | {1}"
@@ -220,7 +220,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/boards/index.tsx", 26],
+      ["src/views/boards/index.tsx", 30],
       ["src/views/settings/components/NewWebhookModal.tsx", 321],
       ["src/views/settings/components/WebhookList.tsx", 106]
     ],
@@ -664,7 +664,7 @@
     "message": "Archived",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/boards/index.tsx", 27]],
+    "origin": [["src/views/boards/index.tsx", 31]],
     "translation": "Arquivado"
   },
   "lo8xBK": {
@@ -999,7 +999,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/components/SideNavigation.tsx", 97],
+      ["src/components/SideNavigation.tsx", 98],
       ["src/views/pricing/components/FeatureComparisonTable.tsx", 73]
     ],
     "translation": "Quadros"
@@ -1874,7 +1874,7 @@
     "comments": [],
     "origin": [
       ["src/views/boards/components/BoardsList.tsx", 80],
-      ["src/views/boards/index.tsx", 41]
+      ["src/views/boards/index.tsx", 45]
     ],
     "translation": "Criar novo {0}"
   },
@@ -1925,7 +1925,7 @@
     "comments": [],
     "origin": [
       ["src/components/NewWorkspaceForm.tsx", 227],
-      ["src/components/WorkspaceMenu.tsx", 171]
+      ["src/components/WorkspaceMenu.tsx", 176]
     ],
     "translation": "Criar workspace"
   },
@@ -3182,7 +3182,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/components/SideNavigation.tsx", 105],
+      ["src/components/SideNavigation.tsx", 106],
       ["src/pages/404.tsx", 44]
     ],
     "translation": "Ir para quadros"
@@ -3198,21 +3198,21 @@
     "message": "Go to members",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/SideNavigation.tsx", 129]],
+    "origin": [["src/components/SideNavigation.tsx", 130]],
     "translation": "Ir para membros"
   },
   "1WuwiM": {
     "message": "Go to settings",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/SideNavigation.tsx", 141]],
+    "origin": [["src/components/SideNavigation.tsx", 142]],
     "translation": "Ir para configurações"
   },
   "csFbe+": {
     "message": "Go to templates",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/SideNavigation.tsx", 117]],
+    "origin": [["src/components/SideNavigation.tsx", 118]],
     "translation": "Ir para modelos"
   },
   "SUvm1Y": {
@@ -3362,7 +3362,7 @@
     "message": "Import",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/boards/index.tsx", 73]],
+    "origin": [["src/views/boards/index.tsx", 82]],
     "translation": "Importar"
   },
   "2MPcep": {
@@ -3925,7 +3925,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/components/SideNavigation.tsx", 121],
+      ["src/components/SideNavigation.tsx", 122],
       ["src/views/board/components/Filters.tsx", 147],
       ["src/views/board/components/NewCardForm.tsx", 386],
       ["src/views/card/index.tsx", 143],
@@ -4049,7 +4049,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/boards/index.tsx", 95],
+      ["src/views/boards/index.tsx", 104],
       ["src/views/home/components/Features.tsx", 73]
     ],
     "translation": "Novo"
@@ -5311,7 +5311,7 @@
     "comments": [],
     "origin": [
       ["src/components/SettingsLayout.tsx", 102],
-      ["src/components/SideNavigation.tsx", 133]
+      ["src/components/SideNavigation.tsx", 134]
     ],
     "translation": "Configurações"
   },
@@ -5547,9 +5547,9 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/components/SideNavigation.tsx", 225],
-      ["src/components/SideNavigation.tsx", 226],
-      ["src/components/SideNavigation.tsx", 236]
+      ["src/components/SideNavigation.tsx", 228],
+      ["src/components/SideNavigation.tsx", 229],
+      ["src/components/SideNavigation.tsx", 239]
     ],
     "translation": "Iniciar teste gratuito"
   },
@@ -5705,7 +5705,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/components/SideNavigation.tsx", 109],
+      ["src/components/SideNavigation.tsx", 110],
       ["src/views/home/components/Features.tsx", 115]
     ],
     "translation": "Templates"
@@ -7168,8 +7168,8 @@
       ["src/views/board/index.tsx", 604],
       ["src/views/board/index.tsx", 662],
       ["src/views/boards/components/BoardsList.tsx", 71],
-      ["src/views/boards/index.tsx", 59],
-      ["src/views/boards/index.tsx", 80]
+      ["src/views/boards/index.tsx", 68],
+      ["src/views/boards/index.tsx", 89]
     ],
     "translation": "Você não tem permissão"
   },

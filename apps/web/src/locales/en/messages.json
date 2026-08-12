@@ -34,7 +34,7 @@
     "origin": [
       [
         "src/views/boards/index.tsx",
-        53
+        62
       ]
     ],
     "translation": "{0}"
@@ -55,7 +55,7 @@
     "origin": [
       [
         "src/views/boards/index.tsx",
-        48
+        57
       ],
       [
         "src/views/card/index.tsx",
@@ -371,7 +371,7 @@
     "origin": [
       [
         "src/views/boards/index.tsx",
-        26
+        30
       ],
       [
         "src/views/settings/components/NewWebhookModal.tsx",
@@ -1121,7 +1121,7 @@
     "origin": [
       [
         "src/views/boards/index.tsx",
-        27
+        31
       ]
     ],
     "translation": "Archived"
@@ -1669,7 +1669,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        97
+        98
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
@@ -3138,7 +3138,7 @@
       ],
       [
         "src/views/boards/index.tsx",
-        41
+        45
       ]
     ],
     "translation": "Create new {0}"
@@ -3222,7 +3222,7 @@
       ],
       [
         "src/components/WorkspaceMenu.tsx",
-        171
+        176
       ]
     ],
     "translation": "Create workspace"
@@ -5353,7 +5353,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        105
+        106
       ],
       [
         "src/pages/404.tsx",
@@ -5381,7 +5381,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        129
+        130
       ]
     ],
     "translation": "Go to members"
@@ -5393,7 +5393,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        141
+        142
       ]
     ],
     "translation": "Go to settings"
@@ -5405,7 +5405,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        117
+        118
       ]
     ],
     "translation": "Go to templates"
@@ -5653,7 +5653,7 @@
     "origin": [
       [
         "src/views/boards/index.tsx",
-        73
+        82
       ]
     ],
     "translation": "Import"
@@ -6603,7 +6603,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        121
+        122
       ],
       [
         "src/views/board/components/Filters.tsx",
@@ -6826,7 +6826,7 @@
     "origin": [
       [
         "src/views/boards/index.tsx",
-        95
+        104
       ],
       [
         "src/views/home/components/Features.tsx",
@@ -9065,7 +9065,7 @@
       ],
       [
         "src/components/SideNavigation.tsx",
-        133
+        134
       ]
     ],
     "translation": "Settings"
@@ -9453,15 +9453,15 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        225
+        228
       ],
       [
         "src/components/SideNavigation.tsx",
-        226
+        229
       ],
       [
         "src/components/SideNavigation.tsx",
-        236
+        239
       ]
     ],
     "translation": "Start free trial"
@@ -9717,7 +9717,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        109
+        110
       ],
       [
         "src/views/home/components/Features.tsx",
@@ -11787,7 +11787,7 @@
       ],
       [
         "src/views/boards/index.tsx",
-        48
+        57
       ],
       [
         "src/views/members/index.tsx",
@@ -12164,11 +12164,11 @@
       ],
       [
         "src/views/boards/index.tsx",
-        59
+        68
       ],
       [
         "src/views/boards/index.tsx",
-        80
+        89
       ]
     ],
     "translation": "You don't have permission"
