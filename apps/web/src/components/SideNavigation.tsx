@@ -4,7 +4,7 @@ import { Button } from "@headlessui/react";
 import { t } from "@lingui/core/macro";
 import { env } from "next-runtime-env";
 import { useTheme } from "next-themes";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { HiBolt } from "react-icons/hi2";
 import {
   TbLayoutSidebarLeftCollapse,
@@ -30,6 +30,7 @@ import UserMenu from "~/components/UserMenu";
 import WorkspaceMenu from "~/components/WorkspaceMenu";
 import { useWorkspace } from "~/providers/workspace";
 import { api } from "~/utils/api";
+import CollapsibleBoardList from "./CollapsibleBoardList ";
 
 interface SideNavigationProps {
   user: UserType;
@@ -92,59 +93,44 @@ export default function SideNavigation({
     href: string;
     icon: object;
     keyboardShortcut: KeyboardShortcut;
-  }[] = useMemo(
-    () => [
-      {
-        name: t`Boards`,
-        href: "/boards",
-        icon: isDarkMode ? boardsIconDark : boardsIconLight,
-        keyboardShortcut: {
-          type: "SEQUENCE",
-          strokes: [{ key: "G" }, { key: "B" }],
-          action: () => router.push("/boards"),
-          group: "NAVIGATION",
-          description: t`Go to boards`,
-        },
+  }[] = [
+    {
+      name: t`Templates`,
+      href: "/templates",
+      icon: isDarkMode ? templatesIconDark : templatesIconLight,
+      keyboardShortcut: {
+        type: "SEQUENCE",
+        strokes: [{ key: "G" }, { key: "T" }],
+        action: () => router.push("/templates"),
+        group: "NAVIGATION",
+        description: t`Go to templates`,
       },
-      {
-        name: t`Templates`,
-        href: "/templates",
-        icon: isDarkMode ? templatesIconDark : templatesIconLight,
-        keyboardShortcut: {
-          type: "SEQUENCE",
-          strokes: [{ key: "G" }, { key: "T" }],
-          action: () => router.push("/templates"),
-          group: "NAVIGATION",
-          description: t`Go to templates`,
-        },
+    },
+    {
+      name: t`Members`,
+      href: "/members",
+      icon: isDarkMode ? membersIconDark : membersIconLight,
+      keyboardShortcut: {
+        type: "SEQUENCE",
+        strokes: [{ key: "G" }, { key: "M" }],
+        action: () => router.push("/members"),
+        group: "NAVIGATION",
+        description: t`Go to members`,
       },
-      {
-        name: t`Members`,
-        href: "/members",
-        icon: isDarkMode ? membersIconDark : membersIconLight,
-        keyboardShortcut: {
-          type: "SEQUENCE",
-          strokes: [{ key: "G" }, { key: "M" }],
-          action: () => router.push("/members"),
-          group: "NAVIGATION",
-          description: t`Go to members`,
-        },
+    },
+    {
+      name: t`Settings`,
+      href: "/settings",
+      icon: isDarkMode ? settingsIconDark : settingsIconLight,
+      keyboardShortcut: {
+        type: "SEQUENCE",
+        strokes: [{ key: "G" }, { key: "S" }],
+        action: () => router.push("/settings"),
+        group: "NAVIGATION",
+        description: t`Go to settings`,
       },
-      {
-        name: t`Settings`,
-        href: "/settings",
-        icon: isDarkMode ? settingsIconDark : settingsIconLight,
-        keyboardShortcut: {
-          type: "SEQUENCE",
-          strokes: [{ key: "G" }, { key: "S" }],
-          action: () => router.push("/settings"),
-          group: "NAVIGATION",
-          description: t`Go to settings`,
-        },
-      },
-    ],
-    [isDarkMode],
-  );
+    },
+  ];
 
   const toggleCollapse = () => {
     setIsCollapsed(!isCollapsed);
@@ -191,6 +177,23 @@ export default function SideNavigation({
 
           <WorkspaceMenu isCollapsed={isCollapsed} />
           <ul role="list" className="space-y-1">
+            <li>
+              <CollapsibleBoardList
+                href="/boards"
+                current={pathname.includes("/boards")}
+                name={t`Boards`}
+                json={isDarkMode ? boardsIconDark : boardsIconLight}
+                isCollapsed={isCollapsed}
+                onCloseSideNav={onCloseSideNav}
+                keyboardShortcut={{
+                  type: "SEQUENCE",
+                  strokes: [{ key: "G" }, { key: "B" }],
+                  action: () => router.push("/boards"),
+                  group: "NAVIGATION",
+                  description: t`Go to boards`,
+                }}
+              />
+            </li>
             {navigation.map((item) => (
               <li key={item.name}>
                 <ReactiveButton
