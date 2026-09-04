@@ -171,7 +171,8 @@
         207
       ]
     ],
-    "translation": "/måned"
+    "translation": "/måned",
+    "obsolete": true
   },
   "be30i9": {
     "message": "$0",
@@ -224,7 +225,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        82
+        91
       ],
       [
         "src/views/pricing/components/Pricing.tsx",
@@ -244,7 +245,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        90
+        98
       ]
     ],
     "translation": "10 MB filuploads"
@@ -256,15 +257,11 @@
     "origin": [
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        66
+        67
       ],
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        88
-      ],
-      [
-        "src/views/pricing/components/PricingTiers.tsx",
-        263
+        214
       ]
     ],
     "translation": "14 dages gratis prøveperiode · Skift abonnement eller opsig når som helst"
@@ -324,7 +321,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        283
+        255
       ]
     ],
     "translation": "Kundeansvarlig"
@@ -380,7 +377,7 @@
       ],
       [
         "src/views/settings/components/WebhookList.tsx",
-        106
+        104
       ]
     ],
     "translation": "Aktiv"
@@ -408,7 +405,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        148
+        149
       ]
     ],
     "translation": "Aktivitetslog"
@@ -456,13 +453,12 @@
     "origin": [
       [
         "src/views/card/components/NewChecklistItemForm.tsx",
-        141
+        157
       ]
     ],
     "translation": "Tilføj et punkt..."
   },
   "sFY+gw": {
-    "translation": "",
     "message": "Add card",
     "placeholders": {},
     "comments": [],
@@ -471,7 +467,8 @@
         "src/views/board/components/List.tsx",
         125
       ]
-    ]
+    ],
+    "translation": ""
   },
   "Gxxi5J": {
     "message": "Add checklist",
@@ -479,11 +476,27 @@
     "comments": [],
     "origin": [
       [
+        "src/views/card/components/AttachmentUpload.tsx",
+        124
+      ],
+      [
         "src/views/card/components/Dropdown.tsx",
         123
       ]
     ],
     "translation": "Tilføj tjekliste"
+  },
+  "oqKXo7": {
+    "message": "Add checklist item",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/card/components/Checklists.tsx",
+        154
+      ]
+    ],
+    "translation": ""
   },
   "ngBZOd": {
     "message": "Add comment... (type '/' to open commands or '@' to mention)",
@@ -532,11 +545,11 @@
     "origin": [
       [
         "src/views/card/components/LabelSelector.tsx",
-        114
+        115
       ],
       [
         "src/views/card/components/LabelSelector.tsx",
-        119
+        120
       ]
     ],
     "translation": "Tilføj etiket"
@@ -548,7 +561,7 @@
     "origin": [
       [
         "src/views/card/components/MemberSelector.tsx",
-        135
+        138
       ],
       [
         "src/views/members/components/InviteMemberForm.tsx",
@@ -786,19 +799,15 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        264
+        238
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        265
+        239
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        266
-      ],
-      [
-        "src/views/pricing/components/FeatureComparisonTable.tsx",
-        267
+        240
       ],
       [
         "src/views/pricing/components/Pricing.tsx",
@@ -814,7 +823,7 @@
     "origin": [
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        103
+        82
       ]
     ],
     "translation": "Avancerede administratorkontroller"
@@ -826,7 +835,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        268
+        241
       ]
     ],
     "translation": "Avancerede administratorroller"
@@ -838,7 +847,7 @@
     "origin": [
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        97
+        76
       ]
     ],
     "translation": "Avanceret sikkerhed, compliance og dedikeret support til store organisationer."
@@ -877,7 +886,8 @@
         101
       ]
     ],
-    "translation": "Alle funktioner i Pro +"
+    "translation": "Alle funktioner i Pro +",
+    "obsolete": true
   },
   "UQbwrz": {
     "message": "All systems operational",
@@ -898,7 +908,7 @@
     "origin": [
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        79
+        80
       ]
     ],
     "translation": "Alle funktioner i Teams +"
@@ -986,7 +996,7 @@
     "origin": [
       [
         "src/views/onboarding/select-plan/index.tsx",
-        68
+        75
       ]
     ],
     "translation": "Årligt"
@@ -1014,7 +1024,7 @@
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        237
+        214
       ]
     ],
     "translation": "API"
@@ -1286,7 +1296,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        199
+        180
       ]
     ],
     "translation": "Ansvarlige"
@@ -1338,7 +1348,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        298
+        284
       ]
     ],
     "translation": "Tilbage"
@@ -1379,6 +1389,18 @@
     ],
     "translation": "Grundlæggende roadmap"
   },
+  "/XCg57": {
+    "message": "Best for growing teams that need collaboration",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/pricing/components/PricingTiers.tsx",
+        53
+      ]
+    ],
+    "translation": ""
+  },
   "Cd4sTD": {
     "message": "Best for individuals and solo creators getting started",
     "placeholders": {},
@@ -1398,7 +1420,7 @@
     "origin": [
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        98
+        77
       ]
     ],
     "translation": "Bedst til store organisationer med avancerede behov"
@@ -1413,7 +1435,8 @@
         53
       ]
     ],
-    "translation": "Bedst til små og voksende teams, der har brug for samarbejde"
+    "translation": "Bedst til små og voksende teams, der har brug for samarbejde",
+    "obsolete": true
   },
   "zt/6cS": {
     "message": "Best for small teams who want to collaborate and move faster together.",
@@ -1425,7 +1448,8 @@
         91
       ]
     ],
-    "translation": "Bedst til små teams, der vil samarbejde og komme hurtigere frem sammen."
+    "translation": "Bedst til små teams, der vil samarbejde og komme hurtigere frem sammen.",
+    "obsolete": true
   },
   "qaS+1/": {
     "message": "Best for teams that want to scale without limits",
@@ -1437,7 +1461,20 @@
         76
       ]
     ],
-    "translation": "Bedst til teams, der vil skalere uden begrænsninger"
+    "translation": "Bedst til teams, der vil skalere uden begrænsninger",
+    "obsolete": true
+  },
+  "jewQ8W": {
+    "message": "Best for teams who want to collaborate and move faster together.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/onboarding/select-plan/index.tsx",
+        98
+      ]
+    ],
+    "translation": ""
   },
   "ARvBT/": {
     "message": "billed annually",
@@ -1565,7 +1602,6 @@
     "translation": "Tavle flyttet"
   },
   "qVcPNk": {
-    "translation": "",
     "message": "Board name",
     "placeholders": {},
     "comments": [],
@@ -1574,7 +1610,8 @@
         "src/views/board/index.tsx",
         561
       ]
-    ]
+    ],
+    "translation": ""
   },
   "wewm3j": {
     "message": "Board name cannot exceed 100 characters",
@@ -1613,7 +1650,6 @@
     "translation": "Tavlen blev ikke fundet"
   },
   "Mu1Zy/": {
-    "translation": "",
     "message": "Board options",
     "placeholders": {},
     "comments": [],
@@ -1622,7 +1658,8 @@
         "src/views/board/components/BoardDropdown.tsx",
         167
       ]
-    ]
+    ],
+    "translation": ""
   },
   "XNxYxq": {
     "message": "Board templates",
@@ -1631,7 +1668,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        116
+        121
       ]
     ],
     "translation": "Tavleskabeloner"
@@ -1711,7 +1748,7 @@
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        132
+        135
       ]
     ],
     "translation": "Tavlens synlighed"
@@ -1747,7 +1784,7 @@
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        73
+        83
       ]
     ],
     "translation": "Tavler"
@@ -2231,7 +2268,7 @@
       ],
       [
         "src/views/onboarding/select-plan/index.tsx",
-        240
+        246
       ],
       [
         "src/views/settings/components/Avatar.tsx",
@@ -2329,7 +2366,6 @@
     "translation": "Kortet blev ikke fundet"
   },
   "c44pvY": {
-    "translation": "",
     "message": "Card options",
     "placeholders": {},
     "comments": [],
@@ -2338,7 +2374,8 @@
         "src/views/card/components/Dropdown.tsx",
         167
       ]
-    ]
+    ],
+    "translation": ""
   },
   "ZH7TVS": {
     "message": "Card title",
@@ -2479,7 +2516,7 @@
     "origin": [
       [
         "src/views/card/components/NewChecklistForm.tsx",
-        119
+        130
       ]
     ],
     "translation": "Navn på tjekliste"
@@ -2491,7 +2528,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        108
+        114
       ],
       [
         "src/views/pricing/components/PricingTiers.tsx",
@@ -2507,7 +2544,7 @@
     "origin": [
       [
         "src/views/onboarding/select-plan/index.tsx",
-        153
+        157
       ]
     ],
     "translation": "Vælg et abonnement"
@@ -2655,7 +2692,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        309
+        279
       ]
     ],
     "translation": "Samarbejde"
@@ -2671,6 +2708,18 @@
       ]
     ],
     "translation": "Kommer snart"
+  },
+  "dYbQ1T": {
+    "message": "Comment options",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/card/components/Comment.tsx",
+        161
+      ]
+    ],
+    "translation": ""
   },
   "VbyRUy": {
     "message": "Comments",
@@ -2762,7 +2811,8 @@
         82
       ]
     ],
-    "translation": "Konfigurerbare brugerroller og rettigheder"
+    "translation": "Konfigurerbare brugerroller og rettigheder",
+    "obsolete": true
   },
   "t0dTPm": {
     "message": "Configure webhooks to receive notifications when cards are created, updated, moved, or deleted.",
@@ -2895,7 +2945,7 @@
     "origin": [
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        95
+        74
       ]
     ],
     "translation": "Kontakt salg"
@@ -2911,11 +2961,11 @@
       ],
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        96
+        75
       ],
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        96
+        75
       ]
     ],
     "translation": "Kontakt os"
@@ -2939,11 +2989,11 @@
     "origin": [
       [
         "src/views/onboarding/select-plan/index.tsx",
-        246
+        252
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        315
+        301
       ]
     ],
     "translation": "Fortsæt"
@@ -3091,7 +3141,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        305
+        275
       ]
     ],
     "translation": "Kernefunktioner"
@@ -3127,7 +3177,7 @@
       ],
       [
         "src/views/board/components/NewListForm.tsx",
-        141
+        156
       ]
     ],
     "translation": "Opret en til"
@@ -3163,7 +3213,7 @@
     "origin": [
       [
         "src/views/card/components/NewChecklistForm.tsx",
-        135
+        146
       ]
     ],
     "translation": "Opret tjekliste"
@@ -3199,7 +3249,7 @@
     "origin": [
       [
         "src/views/board/components/NewListForm.tsx",
-        153
+        168
       ]
     ],
     "translation": "Opret liste"
@@ -3303,7 +3353,7 @@
       ],
       [
         "src/components/WorkspaceMenu.tsx",
-        176
+        177
       ]
     ],
     "translation": "Opret arbejdsområde"
@@ -3365,7 +3415,6 @@
     "translation": "Beskær din avatar"
   },
   "MtNNDo": {
-    "translation": "",
     "message": "Current list",
     "placeholders": {},
     "comments": [],
@@ -3374,7 +3423,8 @@
         "src/views/card/components/ListSelector.tsx",
         85
       ]
-    ]
+    ],
+    "translation": ""
   },
   "D3C4Yx": {
     "message": "Current password is required",
@@ -3414,7 +3464,8 @@
         83
       ]
     ],
-    "translation": "Brugerdefineret branding"
+    "translation": "Brugerdefineret branding",
+    "obsolete": true
   },
   "GAD3Dx": {
     "message": "Custom domain",
@@ -3447,7 +3498,7 @@
     "origin": [
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        105
+        84
       ]
     ],
     "translation": "Brugerdefineret SLA"
@@ -3459,11 +3510,11 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        100
+        106
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        101
+        107
       ]
     ],
     "translation": "Brugerdefineret brugernavn"
@@ -3478,7 +3529,20 @@
         241
       ]
     ],
-    "translation": "Brugerdefinerede brugernavne kræver opgradering til et Pro-abonnement"
+    "translation": "Brugerdefinerede brugernavne kræver opgradering til et Pro-abonnement",
+    "obsolete": true
+  },
+  "5Y8Qur": {
+    "message": "Custom usernames require upgrading to a Team plan",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/onboarding/workspace-details/index.tsx",
+        238
+      ]
+    ],
+    "translation": ""
   },
   "j9IZZ0": {
     "message": "Custom workspace URL",
@@ -3500,7 +3564,7 @@
     "origin": [
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        81
+        58
       ]
     ],
     "translation": "Brugerdefineret brugernavn til arbejdsområde"
@@ -3548,7 +3612,7 @@
     "origin": [
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        104
+        83
       ]
     ],
     "translation": "Dedikeret kundeansvarlig"
@@ -3560,11 +3624,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        98
-      ],
-      [
-        "src/views/pricing/components/FeatureComparisonTable.tsx",
-        99
+        105
       ]
     ],
     "translation": "Standardbrugernavn"
@@ -3608,7 +3668,7 @@
       ],
       [
         "src/views/settings/components/WebhookList.tsx",
-        140
+        136
       ]
     ],
     "translation": "Slet"
@@ -3660,6 +3720,18 @@
       ]
     ],
     "translation": "Slet kort"
+  },
+  "rmAXC2": {
+    "message": "Delete checklist",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/card/components/Checklists.tsx",
+        145
+      ]
+    ],
+    "translation": ""
   },
   "njJFtc": {
     "message": "Delete comment",
@@ -4156,7 +4228,7 @@
       ],
       [
         "src/views/settings/components/WebhookList.tsx",
-        132
+        128
       ]
     ],
     "translation": "Rediger"
@@ -4300,7 +4372,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        191
+        173
       ]
     ],
     "translation": "E-mailnotifikationer"
@@ -4312,7 +4384,7 @@
     "origin": [
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        60
+        61
       ]
     ],
     "translation": "E-mailnotifikationer ved omtaler"
@@ -4348,7 +4420,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        181
+        178
       ]
     ],
     "translation": "Udvikling"
@@ -4476,11 +4548,11 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        334
+        303
       ],
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        92
+        71
       ]
     ],
     "translation": "Enterprise"
@@ -5033,7 +5105,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        89
+        97
       ]
     ],
     "translation": "Filuploads"
@@ -5093,15 +5165,15 @@
     "origin": [
       [
         "src/views/onboarding/select-plan/index.tsx",
-        82
+        89
       ],
       [
         "src/views/onboarding/select-plan/index.tsx",
-        83
+        90
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        331
+        301
       ],
       [
         "src/views/pricing/components/Pricing.tsx",
@@ -5153,7 +5225,7 @@
       ],
       [
         "src/views/members/index.tsx",
-        311
+        312
       ]
     ],
     "translation": "Gratis abonnement"
@@ -5177,15 +5249,11 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        239
+        216
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        240
-      ],
-      [
-        "src/views/pricing/components/FeatureComparisonTable.tsx",
-        241
+        217
       ]
     ],
     "translation": "Fuld API-adgang"
@@ -5250,10 +5318,6 @@
       [
         "src/views/pricing/components/PricingTiers.tsx",
         50
-      ],
-      [
-        "src/views/pricing/components/PricingTiers.tsx",
-        73
       ]
     ],
     "translation": "Kom i gang"
@@ -5489,7 +5553,7 @@
     "origin": [
       [
         "src/views/onboarding/select-plan/index.tsx",
-        84
+        91
       ]
     ],
     "translation": "Godt til enkeltpersoner, der er ved at komme i gang og kun har brug for det mest nødvendige."
@@ -5501,15 +5565,11 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        257
+        232
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        258
-      ],
-      [
-        "src/views/pricing/components/FeatureComparisonTable.tsx",
-        259
+        233
       ]
     ],
     "translation": "Google SSO"
@@ -5521,7 +5581,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        260
+        234
       ]
     ],
     "translation": "Google SSO + SAML"
@@ -5817,7 +5877,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        313
+        283
       ]
     ],
     "translation": "Importer"
@@ -5869,7 +5929,7 @@
     "origin": [
       [
         "src/views/settings/components/WebhookList.tsx",
-        106
+        104
       ]
     ],
     "translation": "Inaktiv"
@@ -5909,7 +5969,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        140
+        142
       ]
     ],
     "translation": "Intelligent søgning"
@@ -5957,7 +6017,7 @@
     "origin": [
       [
         "src/views/members/index.tsx",
-        330
+        331
       ]
     ],
     "translation": "Invitér"
@@ -5993,11 +6053,11 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        207
+        187
       ],
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        58
+        59
       ]
     ],
     "translation": "Invitationslinks"
@@ -6040,7 +6100,20 @@
         329
       ]
     ],
-    "translation": "Invitation af medlemmer kræver et Team- eller Pro-abonnement. Du bliver sendt videre for at opgradere dit arbejdsområde."
+    "translation": "Invitation af medlemmer kræver et Team- eller Pro-abonnement. Du bliver sendt videre for at opgradere dit arbejdsområde.",
+    "obsolete": true
+  },
+  "7tEnCk": {
+    "message": "Inviting members requires a Team plan. You'll be redirected to upgrade your workspace.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/members/components/InviteMemberForm.tsx",
+        329
+      ]
+    ],
+    "translation": ""
   },
   "c9AJhn": {
     "message": "Join workspace",
@@ -6152,6 +6225,10 @@
         524
       ],
       [
+        "src/views/card/components/LabelSelector.tsx",
+        102
+      ],
+      [
         "src/views/card/index.tsx",
         133
       ]
@@ -6165,7 +6242,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        124
+        128
       ]
     ],
     "translation": "Etiketter og filtre"
@@ -6216,7 +6293,8 @@
         159
       ]
     ],
-    "translation": "Lanceringstilbud"
+    "translation": "Lanceringstilbud",
+    "obsolete": true
   },
   "sDuhfK": {
     "message": "Launch offer: unlimited seats for just $29/month with Pro",
@@ -6321,7 +6399,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        238
+        215
       ]
     ],
     "translation": "Begrænset API-adgang"
@@ -6381,13 +6459,12 @@
       ],
       [
         "src/views/board/components/NewListForm.tsx",
-        129
+        144
       ]
     ],
     "translation": "Listenavn"
   },
   "jf++dj": {
-    "translation": "",
     "message": "List options",
     "placeholders": {},
     "comments": [],
@@ -6396,7 +6473,8 @@
         "src/views/board/components/List.tsx",
         165
       ]
-    ]
+    ],
+    "translation": ""
   },
   "h16FyT": {
     "message": "Lists",
@@ -6581,7 +6659,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        181
+        178
       ]
     ],
     "translation": "Marketing"
@@ -6642,6 +6720,18 @@
     ],
     "translation": "Medlem"
   },
+  "fTHH1x": {
+    "message": "Member options",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/members/index.tsx",
+        262
+      ]
+    ],
+    "translation": ""
+  },
   "GnG6Oy": {
     "message": "members",
     "placeholders": {},
@@ -6672,16 +6762,20 @@
         482
       ],
       [
+        "src/views/card/components/MemberSelector.tsx",
+        116
+      ],
+      [
         "src/views/card/index.tsx",
         143
       ],
       [
         "src/views/members/index.tsx",
-        283
+        284
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        81
+        90
       ]
     ],
     "translation": "Medlemmer"
@@ -6697,7 +6791,7 @@
     "origin": [
       [
         "src/views/members/index.tsx",
-        278
+        279
       ]
     ],
     "translation": "Medlemmer | {0}"
@@ -6709,7 +6803,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        183
+        166
       ]
     ],
     "translation": "Omtaler"
@@ -6733,7 +6827,7 @@
     "origin": [
       [
         "src/views/onboarding/select-plan/index.tsx",
-        67
+        74
       ],
       [
         "src/views/pricing/components/Pricing.tsx",
@@ -6976,7 +7070,7 @@
     "origin": [
       [
         "src/views/card/components/NewChecklistForm.tsx",
-        103
+        114
       ]
     ],
     "translation": "Ny tjekliste"
@@ -7012,7 +7106,7 @@
     "origin": [
       [
         "src/views/board/components/NewListForm.tsx",
-        113
+        128
       ],
       [
         "src/views/board/index.tsx",
@@ -7324,7 +7418,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        245
+        221
       ]
     ],
     "translation": "On-premise"
@@ -7336,7 +7430,7 @@
     "origin": [
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        106
+        85
       ]
     ],
     "translation": "Mulighed for on-premise-udrulning"
@@ -7408,7 +7502,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        229
+        207
       ]
     ],
     "translation": "Open source"
@@ -7632,7 +7726,7 @@
       ],
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        120
+        99
       ]
     ],
     "translation": "Betalingsfrekvens"
@@ -7680,7 +7774,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        83
+        92
       ]
     ],
     "translation": "Pris pr. plads"
@@ -7768,7 +7862,7 @@
     "origin": [
       [
         "src/views/onboarding/select-plan/index.tsx",
-        156
+        162
       ]
     ],
     "translation": "Vælg et abonnement for at komme i gang. Alle betalte abonnementer inkluderer 14 dages gratis prøveperiode."
@@ -7820,7 +7914,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        317
+        287
       ]
     ],
     "translation": "Platform"
@@ -7940,7 +8034,7 @@
       ],
       [
         "src/views/board/components/NewListForm.tsx",
-        79
+        94
       ],
       [
         "src/views/board/components/NewTemplateForm.tsx",
@@ -8028,11 +8122,11 @@
       ],
       [
         "src/views/card/components/NewChecklistForm.tsx",
-        71
+        82
       ],
       [
         "src/views/card/components/NewChecklistItemForm.tsx",
-        90
+        106
       ],
       [
         "src/views/card/components/NewCommentForm.tsx",
@@ -8072,11 +8166,11 @@
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        121
+        119
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        170
+        167
       ],
       [
         "src/views/settings/components/Avatar.tsx",
@@ -8220,7 +8314,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        275
+        248
       ],
       [
         "src/views/pricing/components/Pricing.tsx",
@@ -8228,7 +8322,7 @@
       ],
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        61
+        62
       ]
     ],
     "translation": "Prioriteret e-mailsupport"
@@ -8275,7 +8369,8 @@
         70
       ]
     ],
-    "translation": "Pro"
+    "translation": "Pro",
+    "obsolete": true
   },
   "oyRjD/": {
     "message": "Pro Plan",
@@ -8288,7 +8383,7 @@
       ],
       [
         "src/views/members/index.tsx",
-        308
+        309
       ]
     ],
     "translation": "Pro-abonnement"
@@ -8727,7 +8822,7 @@
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        181
+        178
       ]
     ],
     "translation": "Roadmap"
@@ -8739,7 +8834,7 @@
     "origin": [
       [
         "src/views/members/index.tsx",
-        352
+        353
       ]
     ],
     "translation": "Rolle"
@@ -8766,7 +8861,8 @@
         164
       ]
     ],
-    "translation": "Roller og rettigheder"
+    "translation": "Roller og rettigheder",
+    "obsolete": true
   },
   "vAR/I8": {
     "message": "Run on your own infrastructure",
@@ -8787,7 +8883,7 @@
     "origin": [
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        102
+        81
       ]
     ],
     "translation": "SAML SSO"
@@ -8860,6 +8956,18 @@
     ],
     "translation": "Screening"
   },
+  "A1taO8": {
+    "message": "Search",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/components/WorkspaceMenu.tsx",
+        102
+      ]
+    ],
+    "translation": ""
+  },
   "SkCNhl": {
     "message": "Search boards and cards...",
     "placeholders": {},
@@ -8895,7 +9003,7 @@
       ],
       [
         "src/views/members/index.tsx",
-        319
+        320
       ]
     ],
     "translation": "pladser"
@@ -8931,7 +9039,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        321
+        291
       ]
     ],
     "translation": "Sikkerhed"
@@ -9159,7 +9267,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        199
+        196
       ]
     ],
     "translation": "Opsæt dit arbejdsområde"
@@ -9335,11 +9443,11 @@
     "origin": [
       [
         "src/views/onboarding/select-plan/index.tsx",
-        319
+        325
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        386
+        372
       ]
     ],
     "translation": "Log ud"
@@ -9443,7 +9551,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        291
+        262
       ]
     ],
     "translation": "SLA"
@@ -9491,7 +9599,7 @@
     "origin": [
       [
         "src/views/onboarding/select-plan/index.tsx",
-        81
+        88
       ]
     ],
     "translation": "Solo"
@@ -9539,7 +9647,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        256
+        231
       ]
     ],
     "translation": "SSO"
@@ -9601,6 +9709,18 @@
     ],
     "translation": "Start gratis. Opgrader, efterhånden som dit team vokser. Ingen skjulte gebyrer, ingen binding."
   },
+  "lUlbS2": {
+    "message": "Start your 14-day free trial, cancel anytime.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/onboarding/select-plan/index.tsx",
+        161
+      ]
+    ],
+    "translation": ""
+  },
   "uAQUqI": {
     "message": "Status",
     "placeholders": {},
@@ -9624,6 +9744,18 @@
       ]
     ],
     "translation": "Indsend"
+  },
+  "DJUhvh": {
+    "message": "Submit comment",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/card/components/NewCommentForm.tsx",
+        92
+      ]
+    ],
+    "translation": ""
   },
   "WYDptz": {
     "message": "Subscription Required",
@@ -9689,7 +9821,7 @@
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        325
+        295
       ]
     ],
     "translation": "Support"
@@ -9725,7 +9857,7 @@
     "origin": [
       [
         "src/views/onboarding/select-plan/index.tsx",
-        88
+        95
       ]
     ],
     "translation": "Team"
@@ -9745,7 +9877,7 @@
       ],
       [
         "src/views/members/index.tsx",
-        310
+        311
       ]
     ],
     "translation": "Team-abonnement"
@@ -9757,7 +9889,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        332
+        302
       ],
       [
         "src/views/pricing/components/Pricing.tsx",
@@ -9877,7 +10009,7 @@
     "origin": [
       [
         "src/views/settings/components/WebhookList.tsx",
-        136
+        132
       ]
     ],
     "translation": "Test"
@@ -9909,7 +10041,7 @@
       ],
       [
         "src/views/settings/components/WebhookList.tsx",
-        174
+        171
       ]
     ],
     "translation": "Test sendt"
@@ -9925,7 +10057,7 @@
       ],
       [
         "src/views/settings/components/WebhookList.tsx",
-        174
+        172
       ]
     ],
     "translation": "Testwebhook sendt!"
@@ -10248,7 +10380,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        84
+        82
       ]
     ],
     "translation": "Denne URL er allerede taget"
@@ -10260,7 +10392,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        86
+        84
       ]
     ],
     "translation": "Denne URL er reserveret"
@@ -10444,7 +10576,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        218
+        197
       ],
       [
         "src/views/settings/IntegrationsSettings.tsx",
@@ -10508,7 +10640,7 @@
     "origin": [
       [
         "src/views/card/components/NewChecklistItemForm.tsx",
-        89
+        105
       ]
     ],
     "translation": "Kunne ikke tilføje punkt på tjeklisten"
@@ -10604,7 +10736,7 @@
     "origin": [
       [
         "src/views/card/components/NewChecklistForm.tsx",
-        70
+        81
       ]
     ],
     "translation": "Kunne ikke oprette tjekliste"
@@ -10616,7 +10748,7 @@
     "origin": [
       [
         "src/views/board/components/NewListForm.tsx",
-        78
+        93
       ]
     ],
     "translation": "Kunne ikke oprette liste"
@@ -10660,7 +10792,7 @@
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        120
+        118
       ]
     ],
     "translation": "Kunne ikke oprette arbejdsområde"
@@ -10832,7 +10964,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        169
+        166
       ]
     ],
     "translation": "Kunne ikke starte betaling"
@@ -11104,19 +11236,15 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        74
+        84
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        75
+        85
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        76
-      ],
-      [
-        "src/views/pricing/components/FeatureComparisonTable.tsx",
-        77
+        86
       ],
       [
         "src/views/pricing/components/Pricing.tsx",
@@ -11176,19 +11304,15 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        91
+        99
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        92
-      ],
-      [
-        "src/views/pricing/components/FeatureComparisonTable.tsx",
-        93
+        100
       ],
       [
         "src/views/pricing/components/PricingTiers.tsx",
-        59
+        60
       ]
     ],
     "translation": "Ubegrænsede filuploads"
@@ -11224,15 +11348,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        84
-      ],
-      [
-        "src/views/pricing/components/FeatureComparisonTable.tsx",
-        85
-      ],
-      [
-        "src/views/pricing/components/PricingTiers.tsx",
-        80
+        93
       ]
     ],
     "translation": "Ubegrænset antal medlemmer"
@@ -11247,7 +11363,8 @@
         99
       ]
     ],
-    "translation": "Ubegrænset antal medlemmer og et brugerdefineret brugernavn til arbejdsområdet for teams, der er klar til at skalere."
+    "translation": "Ubegrænset antal medlemmer og et brugerdefineret brugernavn til arbejdsområdet for teams, der er klar til at skalere.",
+    "obsolete": true
   },
   "i5yNAO": {
     "message": "Unlimited seats",
@@ -11256,7 +11373,7 @@
     "origin": [
       [
         "src/views/members/index.tsx",
-        318
+        319
       ]
     ],
     "translation": "Ubegrænset antal pladser"
@@ -11271,7 +11388,8 @@
         75
       ]
     ],
-    "translation": "Ubegrænset antal pladser og avancerede funktioner til voksende teams."
+    "translation": "Ubegrænset antal pladser og avancerede funktioner til voksende teams.",
+    "obsolete": true
   },
   "EkH9pt": {
     "message": "Update",
@@ -11384,11 +11502,11 @@
     "origin": [
       [
         "src/views/members/index.tsx",
-        295
+        296
       ],
       [
         "src/views/onboarding/select-plan/index.tsx",
-        245
+        251
       ]
     ],
     "translation": "Opgrader"
@@ -11416,7 +11534,20 @@
         265
       ]
     ],
-    "translation": "Opgrader til Pro ($29/måned)"
+    "translation": "Opgrader til Pro ($29/måned)",
+    "obsolete": true
+  },
+  "21QsyA": {
+    "message": "Upgrade your plan",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/onboarding/select-plan/index.tsx",
+        157
+      ]
+    ],
+    "translation": ""
   },
   "b3Thhd": {
     "message": "Upload failed",
@@ -11553,7 +11684,7 @@
     "origin": [
       [
         "src/views/members/index.tsx",
-        346
+        347
       ]
     ],
     "translation": "Bruger"
@@ -11778,6 +11909,18 @@
     ],
     "translation": "Webhookens navn er påkrævet"
   },
+  "N1eQmK": {
+    "message": "Webhook options",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/settings/components/WebhookList.tsx",
+        125
+      ]
+    ],
+    "translation": ""
+  },
   "8iP9oQ": {
     "message": "Webhook test failed",
     "placeholders": {},
@@ -11937,7 +12080,7 @@
       ],
       [
         "src/views/members/index.tsx",
-        278
+        279
       ],
       [
         "src/views/public/board/index.tsx",
@@ -11969,7 +12112,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        275
+        261
       ],
       [
         "src/views/settings/WorkspaceSettings.tsx",
@@ -12045,7 +12188,7 @@
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        208
+        205
       ],
       [
         "src/views/settings/components/UpdateWorkspaceNameForm.tsx",
@@ -12157,7 +12300,7 @@
     "origin": [
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
-        97
+        104
       ]
     ],
     "translation": "Brugernavn til arbejdsområde"
@@ -12233,7 +12376,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        202
+        199
       ]
     ],
     "translation": "Du kan altid ændre dette senere under indstillinger."
@@ -12248,7 +12391,20 @@
         67
       ]
     ],
-    "translation": "Du kan få en brugerdefineret URL til arbejdsområdet, f.eks. <0>kan.bn/kan</0>, ved at gå til <1>indstillingerne for arbejdsområdet</1> og købe et Pro-abonnement til arbejdsområdet. Alle abonnementer er med til at finansiere udviklingen af projektet!"
+    "translation": "Du kan få en brugerdefineret URL til arbejdsområdet, f.eks. <0>kan.bn/kan</0>, ved at gå til <1>indstillingerne for arbejdsområdet</1> og købe et Pro-abonnement til arbejdsområdet. Alle abonnementer er med til at finansiere udviklingen af projektet!",
+    "obsolete": true
+  },
+  "oRGf3Q": {
+    "message": "You can get a custom workspace URL, like <0>kan.bn/kan</0>, by going into your <1>workspace settings</1> and upgrading to a Team workspace subscription. All subscriptions help fund the development of the project!",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/home/components/Faqs.tsx",
+        67
+      ]
+    ],
+    "translation": ""
   },
   "kSxwQL": {
     "message": "You can invite team members by clicking the \"Invite\" button in the top right corner of the <0>members page</0> and entering their email address. They will receive an email with a link to join the workspace.",
@@ -12445,7 +12601,7 @@
     "origin": [
       [
         "src/views/onboarding/select-plan/index.tsx",
-        264
+        270
       ]
     ],
     "translation": "Din avatar"
@@ -12625,7 +12781,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        346
+        332
       ]
     ],
     "translation": "Dit arbejdsområde"
@@ -12637,7 +12793,7 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        349
+        335
       ]
     ],
     "translation": "Beskrivelse af dit arbejdsområde"
@@ -12697,11 +12853,11 @@
     "origin": [
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        218
+        215
       ],
       [
         "src/views/onboarding/workspace-details/index.tsx",
-        219
+        216
       ]
     ],
     "translation": "dit-arbejdsområde"
