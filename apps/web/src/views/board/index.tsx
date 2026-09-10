@@ -131,20 +131,6 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
       : params.boardId
     : null;
 
-  const openNewListForm = (publicBoardId: string) => {
-    openModal("NEW_LIST");
-    setSelectedPublicListId(publicBoardId);
-  };
-
-  const { tooltipContent: createListShortcutTooltipContent } =
-    useKeyboardShortcut({
-      type: "PRESS",
-      stroke: { key: "C" },
-      action: () => boardId && canCreateList && openNewListForm(boardId),
-      description: t`Create new list`,
-      group: "ACTIONS",
-    });
-
   const createListShortcut = useMemo(
     () => ({
       type: "PRESS" as const,
@@ -155,6 +141,9 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
     }),
     [boardId, canCreateList],
   );
+
+  const { tooltipContent: createListShortcutTooltipContent } =
+    useKeyboardShortcut(createListShortcut);
 
   const updateBoard = api.board.update.useMutation();
 
