@@ -48,6 +48,7 @@ import { CardContextMoveListModal } from "./components/CardContextMoveListModal"
 import { DeleteBoardConfirmation } from "./components/DeleteBoardConfirmation";
 import { DeleteListConfirmation } from "./components/DeleteListConfirmation";
 import Filters from "./components/Filters";
+import { BoardCalendarView } from "./components/BoardCalendarView";
 import List from "./components/List";
 import { MoveBoardForm } from "./components/MoveBoardForm";
 import { NewCardForm } from "./components/NewCardForm";
@@ -58,6 +59,39 @@ import { UpdateBoardSlugForm } from "./components/UpdateBoardSlugForm";
 import VisibilityButton from "./components/VisibilityButton";
 
 type PublicListId = string;
+type BoardViewMode = "kanban" | "calendar";
+type ListSortMode = "manual" | "due-date";
+
+interface SortableCard {
+  dueDate?: Date | null;
+}
+
+function getSortedCards<T extends SortableCard>(
+  cards: T[],
+  sortMode: ListSortMode,
+) {
+  if (sortMode === "manual") {
+    return cards;
+  }
+
+  return [...cards]
+    .map((card, originalIndex) => ({ card, originalIndex }))
+    .sort((left, right) => {
+      const leftDueDate = left.card.dueDate
+        ? new Date(left.card.dueDate).getTime()
+        : Number.POSITIVE_INFINITY;
+      const rightDueDate = right.card.dueDate
+        ? new Date(right.card.dueDate).getTime()
+        : Number.POSITIVE_INFINITY;
+
+      if (leftDueDate !== rightDueDate) {
+        return leftDueDate - rightDueDate;
+      }
+
+      return left.originalIndex - right.originalIndex;
+    })
+    .map(({ card }) => card);
+}
 
 export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
   const params = useParams() as { boardId: string | string[] } | null;
@@ -67,8 +101,14 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
   const { workspace } = useWorkspace();
   const { openModal, modalContentType, entityId, isOpen, setModalState } =
     useModal();
+
   const [selectedPublicListId, setSelectedPublicListId] =
     useState<PublicListId>("");
+  const [boardViewMode, setBoardViewMode] =
+    useState<BoardViewMode>("kanban");
+  const [listSortModes, setListSortModes] = useState<
+    Record<PublicListId, ListSortMode>
+  >({});
   const [isInitialLoading, setIsInitialLoading] = useState(true);
 
   const [contextMenu, setContextMenu] = useState<{
@@ -91,6 +131,20 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
       : params.boardId
     : null;
 
+  const openNewListForm = (publicBoardId: string) => {
+    openModal("NEW_LIST");
+    setSelectedPublicListId(publicBoardId);
+  };
+
+  const { tooltipContent: createListShortcutTooltipContent } =
+    useKeyboardShortcut({
+      type: "PRESS",
+      stroke: { key: "C" },
+      action: () => boardId && canCreateList && openNewListForm(boardId),
+      description: t`Create new list`,
+      group: "ACTIONS",
+    });
+
   const createListShortcut = useMemo(
     () => ({
       type: "PRESS" as const,
@@ -101,9 +155,6 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
     }),
     [boardId, canCreateList],
   );
-
-  const { tooltipContent: createListShortcutTooltipContent } =
-    useKeyboardShortcut(createListShortcut);
 
   const updateBoard = api.board.update.useMutation();
 
@@ -130,7 +181,9 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
     | "no-due-date"
   )[];
 
-  const boardType: "regular" | "template" = isTemplate ? "template" : "regular";
+  const boardType: "regular" | "template" = isTemplate
+    ? "template"
+    : "regular";
 
   const queryParams = {
     boardPublicId: boardId ?? "",
@@ -153,7 +206,6 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
     placeholderData: keepPreviousData,
   });
 
-  // Redirect to 404 if board doesn't exist
   useEffect(() => {
     if (router.isReady && boardId && !isQueryLoading) {
       if (
@@ -166,7 +218,9 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
   }, [router, boardId, isQueryLoading, error, boardData]);
 
   const refetchBoard = async () => {
-    if (boardId) await utils.board.byId.refetch({ boardPublicId: boardId });
+    if (boardId) {
+      await utils.board.byId.refetch({ boardPublicId: boardId });
+    }
   };
 
   useEffect(() => {
@@ -176,6 +230,20 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
   }, [boardId]);
 
   const isLoading = isInitialLoading || isQueryLoading;
+
+  const getListSortMode = (publicListId: PublicListId): ListSortMode => {
+    return listSortModes[publicListId] ?? "manual";
+  };
+
+  const setListSortMode = (
+    publicListId: PublicListId,
+    sortMode: ListSortMode,
+  ) => {
+    setListSortModes((prev) => ({
+      ...prev,
+      [publicListId]: sortMode,
+    }));
+  };
 
   useScrollRestore(
     boardId,
@@ -213,6 +281,8 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
             lists: updatedLists,
           };
         }
+
+        return oldBoard;
       });
 
       return { previousState: currentState };
@@ -244,6 +314,7 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
         const sourceList = updatedLists.find((list) =>
           list.cards.some((card) => card.publicId === args.cardPublicId),
         );
+
         const destinationList = updatedLists.find(
           (list) => list.publicId === args.listPublicId,
         );
@@ -269,6 +340,8 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
             lists: updatedLists,
           };
         }
+
+        return oldBoard;
       });
 
       return { previousState: currentState };
@@ -292,20 +365,22 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
     }
   }, [isSuccess, boardData, setValue]);
 
-  const openNewListForm = (publicBoardId: string) => {
-    openModal("NEW_LIST");
-    setSelectedPublicListId(publicBoardId);
-  };
-
   const handleCardContextMenuAction = (action: CardContextMenuAction) => {
     const cardPublicId = contextMenu?.cardPublicId;
+
     if (!cardPublicId) return;
+
     setContextMenu(null);
+
     if (action === "copyLink") {
       const path = isTemplate
         ? `/templates/${boardId}/cards/${cardPublicId}`
         : `/cards/${cardPublicId}`;
-      const url = `${typeof window !== "undefined" ? window.location.origin : ""}${path}`;
+
+      const url = `${
+        typeof window !== "undefined" ? window.location.origin : ""
+      }${path}`;
+
       void navigator.clipboard.writeText(url).then(
         () => {
           showPopup({
@@ -322,8 +397,10 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
           });
         },
       );
+
       return;
     }
+
     if (action === "duplicate") {
       setModalState("CARD_CONTEXT_DUPLICATE", {
         boardPublicId: boardId ?? "",
@@ -332,10 +409,12 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
       openModal("CARD_CONTEXT_DUPLICATE", cardPublicId);
       return;
     }
+
     if (action === "delete") {
       openModal("DELETE_CARD", cardPublicId);
       return;
     }
+
     const modalType =
       action === "members"
         ? "CARD_CONTEXT_MEMBERS"
@@ -344,6 +423,7 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
           : action === "labels"
             ? "CARD_CONTEXT_LABELS"
             : "CARD_CONTEXT_DUE_DATE";
+
     openModal(modalType, cardPublicId);
   };
 
@@ -375,7 +455,6 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
     ) {
       updateCardMutation.mutate({
         cardPublicId: draggableId,
-
         listPublicId: destination.droppableId,
         index: destination.index,
       });
@@ -438,7 +517,10 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
           modalSize="sm"
           isVisible={isOpen && modalContentType === "NEW_LABEL"}
         >
-          <LabelForm boardPublicId={boardId ?? ""} refetch={refetchBoard} />
+          <LabelForm
+            boardPublicId={boardId ?? ""}
+            refetch={refetchBoard}
+          />
         </Modal>
 
         <Modal
@@ -505,33 +587,44 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
         >
           <CardContextMembersModal />
         </Modal>
+
         <Modal
           modalSize="sm"
-          isVisible={isOpen && modalContentType === "CARD_CONTEXT_MOVE_LIST"}
+          isVisible={
+            isOpen && modalContentType === "CARD_CONTEXT_MOVE_LIST"
+          }
         >
           <CardContextMoveListModal />
         </Modal>
+
         <Modal
           modalSize="sm"
           isVisible={isOpen && modalContentType === "CARD_CONTEXT_LABELS"}
         >
           <CardContextLabelsModal />
         </Modal>
+
         <Modal
           modalSize="sm"
-          isVisible={isOpen && modalContentType === "CARD_CONTEXT_DUE_DATE"}
+          isVisible={
+            isOpen && modalContentType === "CARD_CONTEXT_DUE_DATE"
+          }
         >
           <CardContextDueDateModal />
         </Modal>
+
         <Modal
           modalSize="md"
-          isVisible={isOpen && modalContentType === "CARD_CONTEXT_DUPLICATE"}
+          isVisible={
+            isOpen && modalContentType === "CARD_CONTEXT_DUPLICATE"
+          }
         >
           <CardContextDuplicateModal
             boardPublicId={boardId ?? ""}
             isTemplate={!!isTemplate}
           />
         </Modal>
+
         <Modal
           modalSize="sm"
           isVisible={isOpen && modalContentType === "DELETE_CARD"}
@@ -548,16 +641,21 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
   return (
     <>
       <PageHead
-        title={`${boardData?.name ?? (isTemplate ? t`Template` : t`Board`)} | ${workspace.name ?? t`Workspace`}`}
+        title={`${
+          boardData?.name ?? (isTemplate ? t`Template` : t`Board`)
+        } | ${workspace.name ?? t`Workspace`}`}
       />
+
       <div className="relative flex h-full flex-col">
         <PatternedBackground />
+
         <div className="z-10 flex w-full flex-col justify-between p-6 md:flex-row md:p-8">
           {isLoading && !boardData && (
             <div className="flex space-x-2">
               <div className="h-[2.3rem] w-[150px] animate-pulse rounded-[5px] bg-light-200 dark:bg-dark-100" />
             </div>
           )}
+
           {boardData && (
             <form
               onSubmit={handleSubmit(onSubmit)}
@@ -574,11 +672,13 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
               />
             </form>
           )}
+
           {!boardData && !isLoading && (
             <p className="order-2 block p-0 py-0 font-bold leading-[2.3rem] tracking-tight text-neutral-900 dark:text-dark-1000 sm:text-[1.2rem] md:order-1">
               {t`${isTemplate ? "Template" : "Board"} not found`}
             </p>
           )}
+
           <div className="order-1 mb-4 flex items-center justify-end space-x-2 md:order-2 md:mb-0">
             {isTemplate && (
               <div className="inline-flex cursor-default items-center justify-center whitespace-nowrap rounded-md border-[1px] border-light-300 bg-light-50 px-3 py-2 text-sm font-semibold text-light-950 shadow-sm dark:border-dark-300 dark:bg-dark-50 dark:text-dark-950">
@@ -588,6 +688,33 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
                 {t`Template`}
               </div>
             )}
+
+            <div className="inline-flex rounded-md border border-light-300 bg-light-50 p-1 dark:border-dark-300 dark:bg-dark-100">
+              <button
+                type="button"
+                onClick={() => setBoardViewMode("kanban")}
+                className={`rounded px-2 py-1 text-xs font-semibold ${
+                  boardViewMode === "kanban"
+                    ? "bg-light-1000 text-light-50 dark:bg-dark-1000 dark:text-dark-50"
+                    : "text-light-900 hover:bg-light-200 dark:text-dark-900 dark:hover:bg-dark-200"
+                }`}
+              >
+                {t`Board`}
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setBoardViewMode("calendar")}
+                className={`rounded px-2 py-1 text-xs font-semibold ${
+                  boardViewMode === "calendar"
+                    ? "bg-light-1000 text-light-50 dark:bg-dark-1000 dark:text-dark-50"
+                    : "text-light-900 hover:bg-light-200 dark:text-dark-900 dark:hover:bg-dark-200"
+                }`}
+              >
+                {t`Calendar`}
+              </button>
+            </div>
+
             {!isTemplate && (
               <>
                 <UpdateBoardSlugButton
@@ -599,6 +726,7 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
                   visibility={boardData?.visibility ?? "private"}
                   canEdit={canEditBoard}
                 />
+
                 <VisibilityButton
                   visibility={boardData?.visibility ?? "private"}
                   boardPublicId={boardId ?? ""}
@@ -607,6 +735,7 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
                   isLoading={!boardData}
                   isAdmin={workspace.role === "admin"}
                 />
+
                 {boardData && (
                   <Filters
                     labels={boardData.labels}
@@ -620,6 +749,7 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
                 )}
               </>
             )}
+
             <Tooltip
               content={
                 !canCreateList
@@ -635,13 +765,16 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
                   />
                 }
                 onClick={() => {
-                  if (boardId && canCreateList) openNewListForm(boardId);
+                  if (boardId && canCreateList) {
+                    openNewListForm(boardId);
+                  }
                 }}
                 disabled={!boardData || !canCreateList}
               >
                 {t`New list`}
               </Button>
             </Tooltip>
+
             <BoardDropdown
               isTemplate={!!isTemplate}
               isLoading={!boardData}
@@ -656,37 +789,50 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
         <div
           ref={scrollRef}
           onMouseDown={onMouseDown}
-          className={`scrollbar-w-none scrollbar-track-rounded-[4px] scrollbar-thumb-rounded-[4px] scrollbar-h-[8px] z-0 flex-1 snap-x snap-mandatory scroll-pl-[10px] overflow-y-hidden overflow-x-scroll overscroll-contain scrollbar scrollbar-track-light-200 scrollbar-thumb-light-400 dark:scrollbar-track-dark-100 dark:scrollbar-thumb-dark-300 md:snap-none`}
+          className="scrollbar-w-none scrollbar-track-rounded-[4px] scrollbar-thumb-rounded-[4px] scrollbar-h-[8px] z-0 flex-1 snap-x snap-mandatory scroll-pl-[10px] overflow-y-hidden overflow-x-scroll overscroll-contain scrollbar scrollbar-track-light-200 scrollbar-thumb-light-400 dark:scrollbar-track-dark-100 dark:scrollbar-thumb-dark-300 md:snap-none"
         >
           {isLoading ? (
             <div className="ml-[2rem] flex">
-              <div className="0 mr-5 h-[500px] w-[18rem] animate-pulse rounded-md bg-light-200 dark:bg-dark-100" />
-              <div className="0 mr-5 h-[275px] w-[18rem] animate-pulse rounded-md bg-light-200 dark:bg-dark-100" />
-              <div className="0 mr-5 h-[375px] w-[18rem] animate-pulse rounded-md bg-light-200 dark:bg-dark-100" />
+              <div className="mr-5 h-[500px] w-[18rem] animate-pulse rounded-md bg-light-200 dark:bg-dark-100" />
+              <div className="mr-5 h-[275px] w-[18rem] animate-pulse rounded-md bg-light-200 dark:bg-dark-100" />
+              <div className="mr-5 h-[375px] w-[18rem] animate-pulse rounded-md bg-light-200 dark:bg-dark-100" />
             </div>
           ) : boardData ? (
             <>
-              {boardData.lists.length === 0 ? (
+              {boardViewMode === "calendar" ? (
+                <BoardCalendarView
+                  boardPublicId={boardId ?? ""}
+                  isTemplate={!!isTemplate}
+                  lists={boardData.lists}
+                />
+              ) : boardData.lists.length === 0 ? (
                 <div className="z-10 flex h-full w-full flex-col items-center justify-center space-y-8 pb-[150px]">
                   <div className="flex flex-col items-center">
                     <HiOutlineSquare3Stack3D className="h-10 w-10 text-light-800 dark:text-dark-800" />
+
                     <p className="mb-2 mt-4 text-[14px] font-bold text-light-1000 dark:text-dark-950">
                       {t`No lists`}
                     </p>
+
                     <p className="text-[14px] text-light-900 dark:text-dark-900">
                       {canCreateList
                         ? t`Get started by creating a new list`
                         : t`No lists have been created yet`}
                     </p>
                   </div>
+
                   <Tooltip
                     content={
-                      !canCreateList ? t`You don't have permission` : undefined
+                      !canCreateList
+                        ? t`You don't have permission`
+                        : undefined
                     }
                   >
                     <Button
                       onClick={() => {
-                        if (boardId && canCreateList) openNewListForm(boardId);
+                        if (boardId && canCreateList) {
+                          openNewListForm(boardId);
+                        }
                       }}
                       disabled={!canCreateList}
                     >
@@ -708,11 +854,16 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
                         {...provided.droppableProps}
                       >
                         <div className="min-w-[10px] md:min-w-[2rem]" />
+
                         {boardData.lists.map((list, index) => (
                           <List
                             index={index}
                             key={`list.${list.publicId}`}
                             list={list}
+                            sortMode={getListSortMode(list.publicId)}
+                            onSortModeChange={(sortMode) =>
+                              setListSortMode(list.publicId, sortMode)
+                            }
                             setSelectedPublicListId={(publicListId) =>
                               setSelectedPublicListId(publicListId)
                             }
@@ -730,12 +881,19 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
                                   {...provided.droppableProps}
                                   className="scrollbar-track-rounded-[4px] scrollbar-thumb-rounded-[4px] scrollbar-w-[8px] z-10 h-full max-h-[calc(100dvh-225px)] min-h-[2rem] overflow-y-auto pb-[calc(0.75rem+env(safe-area-inset-bottom))] pr-1 scrollbar dark:scrollbar-track-dark-100 dark:scrollbar-thumb-dark-600"
                                 >
-                                  {list.cards.map((card, index) => (
+                                  {getSortedCards(
+                                    list.cards,
+                                    getListSortMode(list.publicId),
+                                  ).map((card, index) => (
                                     <Draggable
                                       key={card.publicId}
                                       draggableId={card.publicId}
                                       index={index}
-                                      isDragDisabled={!canEditCard}
+                                      isDragDisabled={
+                                        !canEditCard ||
+                                        getListSortMode(list.publicId) ===
+                                          "due-date"
+                                      }
                                     >
                                       {(provided) => (
                                         <Link
@@ -744,8 +902,9 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
                                               card.publicId.startsWith(
                                                 "PLACEHOLDER",
                                               )
-                                            )
+                                            ) {
                                               e.preventDefault();
+                                            }
                                           }}
                                           onContextMenu={(e) => {
                                             if (
@@ -754,9 +913,12 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
                                               ) ||
                                               env("NEXT_PUBLIC_KAN_ENV") ===
                                                 "cloud"
-                                            )
+                                            ) {
                                               return;
+                                            }
+
                                             e.preventDefault();
+
                                             setContextMenu({
                                               x: e.clientX,
                                               y: e.clientY,
@@ -801,12 +963,14 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
                                       )}
                                     </Draggable>
                                   ))}
+
                                   {provided.placeholder}
                                 </div>
                               )}
                             </Droppable>
                           </List>
                         ))}
+
                         <div className="min-w-[calc(100vw-18rem)] md:min-w-[0.75rem]" />
                         {provided.placeholder}
                       </div>
@@ -817,6 +981,7 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
             </>
           ) : null}
         </div>
+
         {contextMenu && (
           <CardContextMenu
             x={contextMenu.x}
@@ -826,6 +991,7 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
             canEdit={!!canEditCard}
           />
         )}
+
         {renderModalContent()}
       </div>
     </>
