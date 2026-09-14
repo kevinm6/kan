@@ -354,6 +354,11 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
     }
   }, [isSuccess, boardData, setValue]);
 
+  const openNewListForm = (publicBoardId: string) => {
+    openModal("NEW_LIST");
+    setSelectedPublicListId(publicBoardId);
+  };
+
   const handleCardContextMenuAction = (action: CardContextMenuAction) => {
     const cardPublicId = contextMenu?.cardPublicId;
 
