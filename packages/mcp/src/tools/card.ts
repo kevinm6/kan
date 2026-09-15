@@ -115,13 +115,46 @@ export function registerCardTools(server: McpServer, client: KanClient): void {
         .string()
         .optional()
         .describe("Target list public ID (defaults to same list)"),
+      copyLabels: z
+        .boolean()
+        .optional()
+        .default(true)
+        .describe("Copy labels to the duplicate"),
+      copyMembers: z
+        .boolean()
+        .optional()
+        .default(true)
+        .describe("Copy assigned members to the duplicate"),
+      copyChecklists: z
+        .boolean()
+        .optional()
+        .default(true)
+        .describe("Copy checklists to the duplicate"),
     },
-    async ({ cardPublicId, targetListPublicId }) => {
+    async ({
+      cardPublicId,
+      targetListPublicId,
+      copyLabels = true,
+      copyMembers = true,
+      copyChecklists = true,
+    }) => {
+      let listPublicId = targetListPublicId;
+      if (!listPublicId) {
+        const card = await client.request<{ list: { publicId: string } }>(
+          "GET",
+          `/cards/${cardPublicId}`,
+        );
+        listPublicId = card.list.publicId;
+      }
+
       const data = await client.request(
         "POST",
         `/cards/${cardPublicId}/duplicate`,
         {
-          targetListPublicId,
+          listPublicId,
+          copyLabels,
+          copyMembers,
+          copyChecklists,
         },
       );
       return {
@@ -232,14 +265,14 @@ export function registerCardTools(server: McpServer, client: KanClient): void {
     "Add or remove a member assignment on a card (toggles if already assigned)",
     {
       cardPublicId: z.string().describe("The card's public ID"),
-      workspaceMemberPublicId: z
+      memberPublicId: z
         .string()
         .describe("The workspace member's public ID"),
     },
-    async ({ cardPublicId, workspaceMemberPublicId }) => {
+    async ({ cardPublicId, memberPublicId }) => {
       const data = await client.request(
         "PUT",
-        `/cards/${cardPublicId}/members/${workspaceMemberPublicId}`,
+        `/cards/${cardPublicId}/members/${memberPublicId}`,
       );
       return {
         content: [{ type: "text", text: JSON.stringify(data, null, 2) }],
