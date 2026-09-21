@@ -1,11 +1,17 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 
+const menuGapClass = {
+  sm: "mt-1",
+  md: "mt-2",
+};
+
 export default function Dropdown({
   items,
   children,
   disabled,
   ariaLabel,
+  menuGap = "sm",
 }: {
   items: {
     label: string;
@@ -16,6 +22,7 @@ export default function Dropdown({
   children: React.ReactNode;
   disabled?: boolean;
   ariaLabel?: string;
+  menuGap?: "sm" | "md";
 }) {
   return (
     <Menu as="div" className="relative inline-block text-left">
