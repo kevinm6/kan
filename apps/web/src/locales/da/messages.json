@@ -124,7 +124,7 @@
     "origin": [
       [
         "src/views/board/components/NewCardForm.tsx",
-        563
+        567
       ]
     ],
     "translation": "{0} etiketter"
@@ -140,7 +140,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        892
+        886
       ]
     ],
     "translation": "{0} blev ikke fundet"
@@ -1404,11 +1404,11 @@
     "origin": [
       [
         "src/views/board/components/NewCardForm.tsx",
-        626
+        630
       ],
       [
         "src/views/board/components/NewCardForm.tsx",
-        627
+        631
       ]
     ],
     "translation": ""
@@ -1663,7 +1663,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        864
+        858
       ],
       [
         "src/views/board/members/index.tsx",
@@ -1768,7 +1768,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        882
+        876
       ]
     ],
     "translation": ""
@@ -2437,7 +2437,7 @@
       ],
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        267
+        255
       ],
       [
         "src/views/board/components/DeleteBoardConfirmation.tsx",
@@ -2525,7 +2525,7 @@
     "origin": [
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        67
+        55
       ],
       [
         "src/views/card/components/Dropdown.tsx",
@@ -2593,7 +2593,7 @@
     "origin": [
       [
         "src/views/board/components/NewCardForm.tsx",
-        429
+        433
       ]
     ],
     "translation": "Korttitel"
@@ -2605,7 +2605,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        437
+        438
       ],
       [
         "src/views/card/components/Dropdown.tsx",
@@ -2718,6 +2718,10 @@
       [
         "src/pages/partner/activate.tsx",
         56
+      ],
+      [
+        "src/views/auth/forgot-password/index.tsx",
+        68
       ],
       [
         "src/views/auth/login/index.tsx",
@@ -2981,7 +2985,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        95
+        96
       ]
     ],
     "translation": "Virksomhed"
@@ -3087,6 +3091,18 @@
     ],
     "translation": "Bekræft din nye adgangskode"
   },
+  "t0qQZE": {
+    "message": "Confirm your password",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/auth/reset-password/index.tsx",
+        112
+      ]
+    ],
+    "translation": ""
+  },
   "iSLIjg": {
     "message": "Connect",
     "placeholders": {},
@@ -3166,7 +3182,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        38
+        42
       ],
       [
         "src/views/home/components/Header.tsx",
@@ -3242,7 +3258,7 @@
     "origin": [
       [
         "src/components/AuthForm.tsx",
-        467
+        477
       ]
     ],
     "translation": "Fortsæt med "
@@ -3318,7 +3334,7 @@
     "origin": [
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        257
+        245
       ]
     ],
     "translation": "Kopiér tjeklister"
@@ -3330,7 +3346,7 @@
     "origin": [
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        221
+        209
       ]
     ],
     "translation": "Kopiér etiketter"
@@ -3354,7 +3370,7 @@
     "origin": [
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        239
+        227
       ]
     ],
     "translation": "Kopiér medlemmer"
@@ -3422,11 +3438,11 @@
       ],
       [
         "src/views/board/components/NewCardForm.tsx",
-        658
+        662
       ],
       [
         "src/views/board/components/NewListForm.tsx",
-        156
+        157
       ]
     ],
     "translation": "Opret en til"
@@ -3450,7 +3466,7 @@
     "origin": [
       [
         "src/views/board/components/NewCardForm.tsx",
-        668
+        672
       ]
     ],
     "translation": "Opret kort"
@@ -3498,7 +3514,7 @@
     "origin": [
       [
         "src/views/board/components/NewListForm.tsx",
-        168
+        169
       ]
     ],
     "translation": "Opret liste"
@@ -3542,7 +3558,7 @@
     "origin": [
       [
         "src/views/board/components/NewCardForm.tsx",
-        525
+        529
       ],
       [
         "src/views/card/components/LabelSelector.tsx",
@@ -3562,7 +3578,7 @@
       ],
       [
         "src/views/board/index.tsx",
-        1020
+        1014
       ]
     ],
     "translation": "Opret ny liste"
@@ -4166,6 +4182,18 @@
     ],
     "translation": "Diskutér og samarbejd om kort."
   },
+  "7oGBMv": {
+    "message": "Discussions",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/home/components/Footer.tsx",
+        39
+      ]
+    ],
+    "translation": ""
+  },
   "pfa8F0": {
     "message": "Display name",
     "placeholders": {},
@@ -4277,7 +4305,7 @@
       ],
       [
         "src/views/home/components/Footer.tsx",
-        78
+        79
       ],
       [
         "src/views/home/components/Header.tsx",
@@ -4365,7 +4393,7 @@
       ],
       [
         "src/views/board/components/NewCardForm.tsx",
-        580
+        584
       ],
       [
         "src/views/card/index.tsx",
@@ -4429,7 +4457,7 @@
     "origin": [
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        279
+        267
       ]
     ],
     "translation": "Duplikér"
@@ -4441,7 +4469,7 @@
     "origin": [
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        111
+        99
       ],
       [
         "src/views/board/components/CardContextMenu.tsx",
@@ -4461,7 +4489,7 @@
     "origin": [
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        279
+        267
       ]
     ],
     "translation": "Duplikerer…"
@@ -4593,7 +4621,7 @@
     "origin": [
       [
         "src/components/AuthForm.tsx",
-        468
+        478
       ]
     ],
     "translation": "e-mail"
@@ -4657,7 +4685,7 @@
     "origin": [
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        200
+        188
       ]
     ],
     "translation": "Slutningen af listen"
@@ -4706,6 +4734,18 @@
     ],
     "translation": "Indtast en brugerdefineret titel"
   },
+  "dDyAXD": {
+    "message": "Enter a new password",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/auth/reset-password/index.tsx",
+        99
+      ]
+    ],
+    "translation": ""
+  },
   "rQRXo8": {
     "message": "Enter new secret to update",
     "placeholders": {},
@@ -4750,6 +4790,10 @@
       [
         "src/components/AuthForm.tsx",
         432
+      ],
+      [
+        "src/views/auth/forgot-password/index.tsx",
+        85
       ]
     ],
     "translation": "Indtast din e-mailadresse"
@@ -5270,7 +5314,7 @@
       ],
       [
         "src/views/home/components/Footer.tsx",
-        52
+        56
       ]
     ],
     "translation": "Ofte stillede spørgsmål"
@@ -5318,7 +5362,7 @@
       ],
       [
         "src/views/home/components/Footer.tsx",
-        50
+        54
       ],
       [
         "src/views/home/components/Header.tsx",
@@ -5418,6 +5462,42 @@
       ]
     ],
     "translation": "For langsigtet bæredygtighed anerkender vi, at alle gode open source-projekter har brug for en indtægtskilde. Vores kommer fra det betalte cloud-tilbud til arbejdsområder med flere brugere og til brugerdefinerede URL-navne for arbejdsområder. Der er ingen forpligtelse til at bruge det, og du kan selv hoste softwaren på din egen infrastruktur uden beregning."
+  },
+  "GbjlZL": {
+    "message": "Forgot password | kan.bn",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/auth/forgot-password/index.tsx",
+        58
+      ]
+    ],
+    "translation": ""
+  },
+  "UNMVei": {
+    "message": "Forgot password?",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/components/AuthForm.tsx",
+        460
+      ]
+    ],
+    "translation": ""
+  },
+  "glx6on": {
+    "message": "Forgot your password?",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/auth/forgot-password/index.tsx",
+        68
+      ]
+    ],
+    "translation": ""
   },
   "2POOFK": {
     "message": "Free",
@@ -5622,7 +5702,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        1002
+        996
       ]
     ],
     "translation": "Kom i gang ved at oprette en ny liste"
@@ -6523,7 +6603,7 @@
       ],
       [
         "src/views/board/components/NewCardForm.tsx",
-        529
+        533
       ],
       [
         "src/views/card/components/LabelSelector.tsx",
@@ -6640,7 +6720,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        131
+        132
       ]
     ],
     "translation": "Juridisk"
@@ -6652,7 +6732,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        45
+        49
       ]
     ],
     "translation": "Licens"
@@ -6716,7 +6796,7 @@
       ],
       [
         "src/views/board/index.tsx",
-        435
+        436
       ],
       [
         "src/views/card/components/Dropdown.tsx",
@@ -6740,7 +6820,7 @@
     "origin": [
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        117
+        105
       ],
       [
         "src/views/card/index.tsx",
@@ -6760,7 +6840,7 @@
       ],
       [
         "src/views/board/components/NewListForm.tsx",
-        144
+        145
       ]
     ],
     "translation": "Listenavn"
@@ -6900,7 +6980,7 @@
     "origin": [
       [
         "src/components/AuthForm.tsx",
-        468
+        478
       ]
     ],
     "translation": "magisk link"
@@ -7084,7 +7164,7 @@
       ],
       [
         "src/views/board/components/NewCardForm.tsx",
-        487
+        491
       ],
       [
         "src/views/card/components/MemberSelector.tsx",
@@ -7395,7 +7475,7 @@
     "origin": [
       [
         "src/views/board/components/NewCardForm.tsx",
-        412
+        416
       ]
     ],
     "translation": "Nyt kort"
@@ -7443,11 +7523,11 @@
     "origin": [
       [
         "src/views/board/components/NewListForm.tsx",
-        128
+        129
       ],
       [
         "src/views/board/index.tsx",
-        944
+        938
       ]
     ],
     "translation": "Ny liste"
@@ -7691,7 +7771,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        998
+        992
       ]
     ],
     "translation": "Ingen lister"
@@ -7703,7 +7783,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        1003
+        997
       ]
     ],
     "translation": "Der er endnu ikke oprettet nogen lister"
@@ -7923,7 +8003,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        39
+        43
       ],
       [
         "src/views/oss-friends/index.tsx",
@@ -8046,6 +8126,10 @@
     "comments": [],
     "origin": [
       [
+        "src/views/auth/reset-password/index.tsx",
+        27
+      ],
+      [
         "src/views/settings/components/ChangePasswordConfirmation.tsx",
         23
       ]
@@ -8069,6 +8153,10 @@
     "placeholders": {},
     "comments": [],
     "origin": [
+      [
+        "src/views/auth/reset-password/index.tsx",
+        31
+      ],
       [
         "src/views/settings/components/ChangePasswordConfirmation.tsx",
         30
@@ -8312,6 +8400,10 @@
       [
         "src/components/AuthForm.tsx",
         436
+      ],
+      [
+        "src/views/auth/forgot-password/index.tsx",
+        89
       ]
     ],
     "translation": "Indtast en gyldig e-mailadresse"
@@ -8336,6 +8428,10 @@
       [
         "src/components/AuthForm.tsx",
         451
+      ],
+      [
+        "src/views/auth/reset-password/index.tsx",
+        104
       ]
     ],
     "translation": "Indtast en gyldig adgangskode"
@@ -8403,11 +8499,11 @@
       ],
       [
         "src/views/board/components/NewCardForm.tsx",
-        200
+        204
       ],
       [
         "src/views/board/components/NewListForm.tsx",
-        94
+        95
       ],
       [
         "src/views/board/components/NewTemplateForm.tsx",
@@ -8427,15 +8523,15 @@
       ],
       [
         "src/views/board/index.tsx",
-        289
+        290
       ],
       [
         "src/views/board/index.tsx",
-        345
+        346
       ],
       [
         "src/views/board/index.tsx",
-        382
+        383
       ],
       [
         "src/views/boards/components/ImportBoardsForm.tsx",
@@ -8611,7 +8707,7 @@
       ],
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        76
+        64
       ],
       [
         "src/views/board/components/CardContextMoveListModal.tsx",
@@ -8619,7 +8715,7 @@
       ],
       [
         "src/views/board/index.tsx",
-        444
+        445
       ],
       [
         "src/views/card/components/Dropdown.tsx",
@@ -8651,7 +8747,7 @@
     "origin": [
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        193
+        181
       ]
     ],
     "translation": "Placering på listen (0 = først, lad feltet være tomt for sidst)"
@@ -8675,7 +8771,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        51
+        55
       ],
       [
         "src/views/home/components/Header.tsx",
@@ -8727,7 +8823,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        43
+        47
       ]
     ],
     "translation": "Privatlivspolitik"
@@ -8913,6 +9009,22 @@
     ],
     "translation": "Afvist"
   },
+  "OSmrFy": {
+    "message": "Remembered your password? <0><1>Sign in</1></0>",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/auth/forgot-password/index.tsx",
+        111
+      ],
+      [
+        "src/views/auth/reset-password/index.tsx",
+        146
+      ]
+    ],
+    "translation": ""
+  },
   "qlAIQ1": {
     "message": "Remote",
     "placeholders": {},
@@ -8948,7 +9060,7 @@
     "origin": [
       [
         "src/views/board/components/NewCardForm.tsx",
-        645
+        649
       ]
     ],
     "translation": ""
@@ -9176,6 +9288,30 @@
     ],
     "translation": "Research"
   },
+  "RfwZxd": {
+    "message": "Reset password",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/auth/reset-password/index.tsx",
+        130
+      ]
+    ],
+    "translation": ""
+  },
+  "S57AHL": {
+    "message": "Reset password | kan.bn",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/auth/reset-password/index.tsx",
+        79
+      ]
+    ],
+    "translation": ""
+  },
   "e4hPSt": {
     "message": "Reset to role defaults",
     "placeholders": {},
@@ -9207,7 +9343,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        114
+        115
       ]
     ],
     "translation": "Ressourcer"
@@ -9504,7 +9640,7 @@
     "origin": [
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        131
+        119
       ]
     ],
     "translation": "Vælg en liste"
@@ -9637,6 +9773,18 @@
     ],
     "translation": "Send feedback"
   },
+  "eaUTwS": {
+    "message": "Send reset link",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/auth/forgot-password/index.tsx",
+        103
+      ]
+    ],
+    "translation": ""
+  },
   "eus61c": {
     "message": "Send test",
     "placeholders": {},
@@ -9660,6 +9808,18 @@
       ]
     ],
     "translation": "Senior"
+  },
+  "+DlsTY": {
+    "message": "Set a new password",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/auth/reset-password/index.tsx",
+        89
+      ]
+    ],
+    "translation": ""
   },
   "GXGbXi": {
     "message": "Set a password to enable password-based login.",
@@ -10004,7 +10164,7 @@
     "origin": [
       [
         "src/components/AuthForm.tsx",
-        467
+        477
       ]
     ],
     "translation": "Opret konto med "
@@ -10104,7 +10264,7 @@
     "origin": [
       [
         "src/views/board/components/NewCardForm.tsx",
-        332
+        336
       ]
     ],
     "translation": ""
@@ -10132,6 +10292,18 @@
       ]
     ],
     "translation": "Noget gik galt under aktiveringen af licensen."
+  },
+  "kf83Ld": {
+    "message": "Something went wrong.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/auth/forgot-password/index.tsx",
+        49
+      ]
+    ],
+    "translation": ""
   },
   "vnS6Rf": {
     "message": "SSO",
@@ -10274,6 +10446,10 @@
       [
         "src/components/AuthForm.tsx",
         241
+      ],
+      [
+        "src/views/auth/reset-password/index.tsx",
+        70
       ]
     ],
     "translation": "Fuldført"
@@ -10402,11 +10578,11 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        864
+        858
       ],
       [
         "src/views/board/index.tsx",
-        901
+        895
       ]
     ],
     "translation": "Skabelon"
@@ -10502,7 +10678,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        42
+        46
       ]
     ],
     "translation": "Servicevilkår"
@@ -10650,7 +10826,7 @@
     "origin": [
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        69
+        57
       ]
     ],
     "translation": "Kortet er blevet duplikeret."
@@ -10669,7 +10845,7 @@
     "origin": [
       [
         "src/views/board/components/NewCardForm.tsx",
-        333
+        337
       ]
     ],
     "translation": ""
@@ -10890,6 +11066,22 @@
     ],
     "translation": "Dette medlems rettigheder er nulstillet til standardindstillingerne for rollen."
   },
+  "ROcqIU": {
+    "message": "This password reset link is invalid or has expired.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/auth/reset-password/index.tsx",
+        65
+      ],
+      [
+        "src/views/auth/reset-password/index.tsx",
+        139
+      ]
+    ],
+    "translation": ""
+  },
   "HQVm6e": {
     "message": "This URL has already been taken",
     "placeholders": {},
@@ -11029,7 +11221,7 @@
     "origin": [
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        180
+        168
       ]
     ],
     "translation": "Titel (valgfrit)"
@@ -11245,7 +11437,7 @@
       ],
       [
         "src/views/board/index.tsx",
-        442
+        443
       ],
       [
         "src/views/card/components/Dropdown.tsx",
@@ -11269,7 +11461,7 @@
     "origin": [
       [
         "src/views/board/components/NewCardForm.tsx",
-        197
+        201
       ]
     ],
     "translation": "Kunne ikke oprette kort"
@@ -11293,7 +11485,7 @@
     "origin": [
       [
         "src/views/board/components/NewListForm.tsx",
-        93
+        94
       ]
     ],
     "translation": "Kunne ikke oprette liste"
@@ -11421,7 +11613,7 @@
     "origin": [
       [
         "src/views/board/components/CardContextDuplicateModal.tsx",
-        75
+        63
       ],
       [
         "src/views/card/components/Dropdown.tsx",
@@ -11577,7 +11769,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        344
+        345
       ],
       [
         "src/views/card/index.tsx",
@@ -11629,7 +11821,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        381
+        382
       ],
       [
         "src/views/card/components/DueDateSelector.tsx",
@@ -11657,7 +11849,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        288
+        289
       ],
       [
         "src/views/card/components/ListSelector.tsx",
@@ -12402,6 +12594,22 @@
     ],
     "translation": "Vi er kun lige begyndt. "
   },
+  "nB44E/": {
+    "message": "We've sent a password reset link to {emailSentTo}.",
+    "placeholders": {
+      "emailSentTo": [
+        "emailSentTo"
+      ]
+    },
+    "comments": [],
+    "origin": [
+      [
+        "src/views/auth/forgot-password/index.tsx",
+        73
+      ]
+    ],
+    "translation": ""
+  },
   "an6ayw": {
     "message": "Webhook created",
     "placeholders": {},
@@ -12641,7 +12849,7 @@
       ],
       [
         "src/views/board/index.tsx",
-        864
+        858
       ],
       [
         "src/views/boards/index.tsx",
@@ -13038,11 +13246,11 @@
       ],
       [
         "src/views/board/index.tsx",
-        932
+        926
       ],
       [
         "src/views/board/index.tsx",
-        1009
+        1003
       ],
       [
         "src/views/boards/components/BoardsList.tsx",
@@ -13302,6 +13510,18 @@
       ]
     ],
     "translation": "Din adgangskode er blevet ændret."
+  },
+  "A7TuZy": {
+    "message": "Your password has been reset successfully.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/auth/reset-password/index.tsx",
+        71
+      ]
+    ],
+    "translation": ""
   },
   "EuK5ez": {
     "message": "Your password has been set.",
