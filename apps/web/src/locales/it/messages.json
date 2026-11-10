@@ -10,7 +10,7 @@
     "message": ", or see our",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/FeedbackModal.tsx", 102]],
+    "origin": [["src/components/FeedbackModal.tsx", 106]],
     "translation": ", oppure consulta il nostro"
   },
   "J/hVSQ": {
@@ -32,7 +32,7 @@
     "comments": [],
     "origin": [
       ["src/views/boards/index.tsx", 58],
-      ["src/views/card/index.tsx", 348]
+      ["src/views/card/index.tsx", 361]
     ],
     "translation": "{0} | {1}"
   },
@@ -189,7 +189,7 @@
     "message": "A powerful, flexible kanban app that helps you organise work, track progress, and deliver results—all in one place.",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/index.tsx", 71]],
+    "origin": [["src/views/home/index.tsx", 74]],
     "translation": "Un'app kanban potente e flessibile che ti aiuta a organizzare il lavoro, monitorare i progressi e ottenere risultati, tutto in un unico posto."
   },
   "AeXO77": {
@@ -254,7 +254,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/card/index.tsx", 504],
+      ["src/views/card/index.tsx", 520],
       ["src/views/public/board/CardModal.tsx", 211]
     ],
     "translation": "Attività"
@@ -999,7 +999,7 @@
     "origin": [
       ["src/views/board/index.tsx", 858],
       ["src/views/board/members/index.tsx", 209],
-      ["src/views/card/index.tsx", 348],
+      ["src/views/card/index.tsx", 361],
       ["src/views/public/board/index.tsx", 125]
     ],
     "translation": "Board"
@@ -1493,7 +1493,7 @@
     "message": "Card",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/card/index.tsx", 348]],
+    "origin": [["src/views/card/index.tsx", 361]],
     "translation": "Card"
   },
   "sU2uWc": {
@@ -1525,8 +1525,8 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/card/index.tsx", 411],
-      ["src/views/card/index.tsx", 448]
+      ["src/views/card/index.tsx", 424],
+      ["src/views/card/index.tsx", 461]
     ],
     "translation": "Card non trovata"
   },
@@ -1710,7 +1710,7 @@
     "comments": [],
     "origin": [
       ["src/components/Dashboard.tsx", 281],
-      ["src/views/card/index.tsx", 402],
+      ["src/views/card/index.tsx", 415],
       ["src/views/members/components/EditMemberPermissionsModal.tsx", 175],
       ["src/views/settings/components/NewApiKeyModal.tsx", 136]
     ],
@@ -1918,7 +1918,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/components/FeedbackModal.tsx", 100],
+      ["src/components/FeedbackModal.tsx", 104],
       ["src/views/pricing/components/PricingTiers.tsx", 75],
       ["src/views/pricing/components/PricingTiers.tsx", 75]
     ],
@@ -2558,7 +2558,7 @@
     "message": "docs",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/FeedbackModal.tsx", 109]],
+    "origin": [["src/components/FeedbackModal.tsx", 113]],
     "translation": "docs"
   },
   "TbjyhA": {
@@ -3242,7 +3242,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/components/FeedbackModal.tsx", 59],
+      ["src/components/FeedbackModal.tsx", 63],
       ["src/components/UserMenu.tsx", 217]
     ],
     "translation": "Feedback"
@@ -3251,7 +3251,7 @@
     "message": "Feedback sent",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/FeedbackModal.tsx", 33]],
+    "origin": [["src/components/FeedbackModal.tsx", 34]],
     "translation": "Feedback inviato"
   },
   "F6m23G": {
@@ -3443,7 +3443,7 @@
     "message": "Get started on Cloud",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/index.tsx", 75]],
+    "origin": [["src/views/home/index.tsx", 78]],
     "translation": "Inizia su Cloud"
   },
   "7hktsm": {
@@ -3695,7 +3695,7 @@
     "message": "Ideas to improve this page...",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/FeedbackModal.tsx", 75]],
+    "origin": [["src/components/FeedbackModal.tsx", 79]],
     "translation": "Idee per migliorare questa pagina..."
   },
   "l3s5ri": {
@@ -4459,7 +4459,7 @@
     "message": "Need help?",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/FeedbackModal.tsx", 95]],
+    "origin": [["src/components/FeedbackModal.tsx", 99]],
     "translation": "Serve aiuto?"
   },
   "PSXKxs": {
@@ -4641,7 +4641,7 @@
     "message": "No credit card required",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/index.tsx", 85]],
+    "origin": [["src/views/home/index.tsx", 88]],
     "translation": "Nessuna carta di credito richiesta"
   },
   "MK16u2": {
@@ -5111,7 +5111,7 @@
     "comments": [],
     "origin": [
       ["src/components/DeleteLabelConfirmation.tsx", 26],
-      ["src/components/FeedbackModal.tsx", 41],
+      ["src/components/FeedbackModal.tsx", 42],
       ["src/components/NewWorkspaceForm.tsx", 110],
       ["src/views/board/components/BoardDropdown.tsx", 80],
       ["src/views/board/components/NewCardForm.tsx", 204],
@@ -5214,8 +5214,8 @@
       ["src/views/home/components/Header.tsx", 18],
       ["src/views/home/components/Header.tsx", 34],
       ["src/views/pricing/components/Pricing.tsx", 85],
-      ["src/views/pricing/index.tsx", 34],
-      ["src/views/pricing/index.tsx", 40]
+      ["src/views/pricing/index.tsx", 35],
+      ["src/views/pricing/index.tsx", 43]
     ],
     "translation": "Prezzi"
   },
@@ -5788,7 +5788,7 @@
     "message": "Self host with Github",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/index.tsx", 81]],
+    "origin": [["src/views/home/index.tsx", 84]],
     "translation": "Self host con Github"
   },
   "VXk54Y": {
@@ -5811,7 +5811,7 @@
     "message": "Send feedback",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/FeedbackModal.tsx", 116]],
+    "origin": [["src/components/FeedbackModal.tsx", 120]],
     "translation": "Invia feedback"
   },
   "eaUTwS": {
@@ -6050,9 +6050,16 @@
     "comments": [],
     "origin": [
       ["src/views/pricing/components/Pricing.tsx", 89],
-      ["src/views/pricing/index.tsx", 44]
+      ["src/views/pricing/index.tsx", 47]
     ],
     "translation": "Prezzi semplici"
+  },
+  "/ty94x": {
+    "message": "Simple, transparent pricing. Start free with unlimited boards and cards, upgrade as your team grows. No hidden fees, no contracts.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [["src/views/pricing/index.tsx", 36]],
+    "translation": "Prezzi semplici e trasparenti. Inizia gratis con bacheche e schede illimitate e passa a un piano superiore man mano che il tuo team cresce. Nessun costo nascosto, nessun vincolo contrattuale."
   },
   "sBhOFG": {
     "message": "Simple, visual task management that just works. Drag and drop cards, collaborate with your team, and get more done.",
@@ -6139,7 +6146,7 @@
     "message": "Star on Github",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/index.tsx", 37]],
+    "origin": [["src/views/home/index.tsx", 40]],
     "translation": "Metti una stella su Github"
   },
   "veIDCY": {
@@ -6167,7 +6174,7 @@
     "message": "Start free. Upgrade as your team grows. No hidden fees, no contracts.",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/pricing/index.tsx", 47]],
+    "origin": [["src/views/pricing/index.tsx", 50]],
     "translation": "Inizia gratis. Aggiorna man mano che il tuo team cresce. Nessun costo nascosto, nessun contratto."
   },
   "lUlbS2": {
@@ -6400,7 +6407,7 @@
     "message": "Thank you for your feedback!",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/FeedbackModal.tsx", 34]],
+    "origin": [["src/components/FeedbackModal.tsx", 35]],
     "translation": "Grazie per il tuo feedback!"
   },
   "ssK7k+": {
@@ -6489,7 +6496,7 @@
     "message": "The open source <0/> alternative to Trello",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/index.tsx", 65]],
+    "origin": [["src/views/home/index.tsx", 68]],
     "translation": "L'alternativa open source <0/> a Trello"
   },
   "0xD8Of": {
@@ -6977,7 +6984,7 @@
     "message": "Unable to send feedback",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/FeedbackModal.tsx", 40]],
+    "origin": [["src/components/FeedbackModal.tsx", 41]],
     "translation": "Impossibile inviare il feedback"
   },
   "Q60WUZ": {

@@ -18,7 +18,7 @@
     "origin": [
       [
         "src/components/FeedbackModal.tsx",
-        102
+        106
       ]
     ],
     "translation": ", or see our"
@@ -60,7 +60,7 @@
       ],
       [
         "src/views/card/index.tsx",
-        348
+        361
       ]
     ],
     "translation": "{0} | {1}"
@@ -329,7 +329,7 @@
     "origin": [
       [
         "src/views/home/index.tsx",
-        71
+        74
       ]
     ],
     "translation": "A powerful, flexible kanban app that helps you organise work, track progress, and deliver results—all in one place."
@@ -433,7 +433,7 @@
     "origin": [
       [
         "src/views/card/index.tsx",
-        504
+        520
       ],
       [
         "src/views/public/board/CardModal.tsx",
@@ -1671,7 +1671,7 @@
       ],
       [
         "src/views/card/index.tsx",
-        348
+        361
       ],
       [
         "src/views/public/board/index.tsx",
@@ -2513,7 +2513,7 @@
     "origin": [
       [
         "src/views/card/index.tsx",
-        348
+        361
       ]
     ],
     "translation": "Card"
@@ -2565,11 +2565,11 @@
     "origin": [
       [
         "src/views/card/index.tsx",
-        411
+        424
       ],
       [
         "src/views/card/index.tsx",
-        448
+        461
       ]
     ],
     "translation": "Card not found"
@@ -2873,7 +2873,7 @@
       ],
       [
         "src/views/card/index.tsx",
-        402
+        415
       ],
       [
         "src/views/members/components/EditMemberPermissionsModal.tsx",
@@ -3223,7 +3223,7 @@
     "origin": [
       [
         "src/components/FeedbackModal.tsx",
-        100
+        104
       ],
       [
         "src/views/pricing/components/PricingTiers.tsx",
@@ -4304,7 +4304,7 @@
     "origin": [
       [
         "src/components/FeedbackModal.tsx",
-        109
+        113
       ]
     ],
     "translation": "docs"
@@ -5434,7 +5434,7 @@
     "origin": [
       [
         "src/components/FeedbackModal.tsx",
-        59
+        63
       ],
       [
         "src/components/UserMenu.tsx",
@@ -5450,7 +5450,7 @@
     "origin": [
       [
         "src/components/FeedbackModal.tsx",
-        33
+        34
       ]
     ],
     "translation": "Feedback sent"
@@ -5790,7 +5790,7 @@
     "origin": [
       [
         "src/views/home/index.tsx",
-        75
+        78
       ]
     ],
     "translation": "Get started on Cloud"
@@ -6206,7 +6206,7 @@
     "origin": [
       [
         "src/components/FeedbackModal.tsx",
-        75
+        79
       ]
     ],
     "translation": "Ideas to improve this page..."
@@ -7485,7 +7485,7 @@
     "origin": [
       [
         "src/components/FeedbackModal.tsx",
-        95
+        99
       ]
     ],
     "translation": "Need help?"
@@ -7801,7 +7801,7 @@
     "origin": [
       [
         "src/views/home/index.tsx",
-        85
+        88
       ]
     ],
     "translation": "No credit card required"
@@ -8577,7 +8577,7 @@
       ],
       [
         "src/components/FeedbackModal.tsx",
-        41
+        42
       ],
       [
         "src/components/NewWorkspaceForm.tsx",
@@ -8877,11 +8877,11 @@
       ],
       [
         "src/views/pricing/index.tsx",
-        34
+        35
       ],
       [
         "src/views/pricing/index.tsx",
-        40
+        43
       ]
     ],
     "translation": "Pricing"
@@ -9818,7 +9818,7 @@
     "origin": [
       [
         "src/views/home/index.tsx",
-        81
+        84
       ]
     ],
     "translation": "Self host with Github"
@@ -9858,7 +9858,7 @@
     "origin": [
       [
         "src/components/FeedbackModal.tsx",
-        116
+        120
       ]
     ],
     "translation": "Send feedback"
@@ -10270,10 +10270,22 @@
       ],
       [
         "src/views/pricing/index.tsx",
-        44
+        47
       ]
     ],
     "translation": "Simple pricing"
+  },
+  "/ty94x": {
+    "message": "Simple, transparent pricing. Start free with unlimited boards and cards, upgrade as your team grows. No hidden fees, no contracts.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/pricing/index.tsx",
+        36
+      ]
+    ],
+    "translation": "Simple, transparent pricing. Start free with unlimited boards and cards, upgrade as your team grows. No hidden fees, no contracts."
   },
   "sBhOFG": {
     "message": "Simple, visual task management that just works. Drag and drop cards, collaborate with your team, and get more done.",
@@ -10414,7 +10426,7 @@
     "origin": [
       [
         "src/views/home/index.tsx",
-        37
+        40
       ]
     ],
     "translation": "Star on Github"
@@ -10458,8 +10470,8 @@
     "comments": [],
     "origin": [
       [
-        "src/views/card/components/NewCommentForm.tsx",
-        60
+        "src/views/pricing/index.tsx",
+        50
       ]
     ],
     "translation": "Submit"
@@ -10888,7 +10900,7 @@
     "origin": [
       [
         "src/components/FeedbackModal.tsx",
-        34
+        35
       ]
     ],
     "translation": "Thank you for your feedback!"
@@ -11035,7 +11047,7 @@
     "origin": [
       [
         "src/views/home/index.tsx",
-        65
+        68
       ]
     ],
     "translation": "The open source <0/> alternative to Trello"
@@ -11819,7 +11831,7 @@
     "origin": [
       [
         "src/components/FeedbackModal.tsx",
-        40
+        41
       ]
     ],
     "translation": "Unable to send feedback"
