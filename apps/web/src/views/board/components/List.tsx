@@ -11,6 +11,7 @@ import {
   HiOutlineTrash,
 } from "react-icons/hi2";
 
+import { useUpdateList } from "@kan/api-client/hooks";
 import { authClient } from "@kan/auth/client";
 
 import type { ListDragData } from "../dnd/types";
@@ -18,7 +19,6 @@ import Dropdown from "~/components/Dropdown";
 import { Tooltip } from "~/components/Tooltip";
 import { usePermissions } from "~/hooks/usePermissions";
 import { useModal } from "~/providers/modal";
-import { api } from "~/utils/api";
 import { isPlaceholderPublicId } from "~/utils/helpers";
 
 interface ListProps {
@@ -63,7 +63,7 @@ export default function List({
     setSelectedPublicListId(publicListId);
   };
 
-  const updateList = api.list.update.useMutation();
+  const updateList = useUpdateList();
 
   const { register, handleSubmit } = useForm<FormValues>({
     defaultValues: {
@@ -80,7 +80,7 @@ export default function List({
     if (!canEdit || isOptimistic) return;
     updateList.mutate({
       listPublicId: values.listPublicId,
-      name: values.name,
+      data: { name: values.name },
     });
   };
 
